@@ -3,6 +3,7 @@ import Section from "./Section";
 import styles from "../styles/Intro.module.scss";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
+import ParticlesContainer from "./ParticlesContainer";
 
 const Intro = () => {
   return (
@@ -14,7 +15,7 @@ const Intro = () => {
 
           </h1>
           <p>
-            We create solid selling systems to scalate your business.
+            Create solid selling systems to scalate your business.
           </p>
           <div className={styles.actions}>
             <Link href="#">
@@ -32,6 +33,8 @@ const Intro = () => {
           </div>
         </div>
       </div>
+
+      <ParticlesContainer />
     </Section>
   );
 };
