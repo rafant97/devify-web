@@ -1,12 +1,11 @@
 import styles from "../styles/Navbar.module.scss";
-import { BsMoon, BsSun } from "react-icons/bs";
 import { FaBars, FaTimes } from "react-icons/fa";
 import useOnClickOutside from "../hooks/ClickOutside";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Navbar = ({ setMode, mode }) => {
+const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const mobileNav = useRef();
@@ -35,7 +34,7 @@ const Navbar = ({ setMode, mode }) => {
           <div className={styles.me}>
             <Link href={"/"}>
               <a>
-                <span>WebDesign</span>
+                <span>Devify</span>
                 <div className={styles.profile}>
                   <div className={styles.imgBorder}>
                     <Image
@@ -87,12 +86,7 @@ const Navbar = ({ setMode, mode }) => {
                 <FaBars />
               </button>
             </div>
-            <button
-              className={`${styles.mode} ${!mode ? styles.light : ""}`}
-              onClick={() => setMode(!mode)}
-            >
-              {mode ? <BsSun /> : <BsMoon />}
-            </button>
+            
           </ul>
         </nav>
       </div>

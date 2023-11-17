@@ -36,27 +36,6 @@
     }
 }
 
-.support {
-    &:hover {
-        svg,
-        a {
-            color: var(--color-primary);
-        }
-    }
-    a {
-        display: flex;
-        align-items: center;
-        gap: 0.1rem;
-        font-size: 1.1rem;
-        transition: color 200ms ease-in-out;
-        cursor: pointer;
-    }
-    svg {
-        font-size: 1.1rem;
-        transition: color 200ms ease-in-out;
-    }
-}
-
 .contact {
     display: flex;
     gap: 0.5rem;

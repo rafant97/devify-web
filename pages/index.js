@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Head from "next/head";
-import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
 import {
   GradientCircleTop,
@@ -14,11 +13,11 @@ import Clients from "../components/Clients";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
+import StrongPoints from "../components/StrongPoints";
 
 export default function Home() {
-  const [mode, setMode] = useState(true);
   return (
-    <div className={`page ${!mode && "light"} dark`}>
+    <div className={`page dark`}>
       <Head>
         <title>Shopify Headless Agency</title>
         <meta name="description" 
@@ -26,12 +25,12 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Banner />
-      <Navbar setMode={setMode} mode={mode} />
+      <Navbar />
       <main className="main">
         <GradientCircleTop />
         <GradientCircleMd />
         <Intro />
+        <StrongPoints />
         <Services />
         <Methods />
         <Pricing />
