@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    @media screen and (max-width: 1200px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 640px) {
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        width: 50%;
+        color: white;
+        margin: 50px;
+        padding: 20px;
+        p {
+            color: var(--color-gray-100);
+        }
+    }
+    .img {
+        width: 50%;
+    }
+}

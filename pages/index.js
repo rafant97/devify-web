@@ -14,6 +14,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
 import StrongPoints from "../components/StrongPoints";
+import Integration from "../components/Integration";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <GradientCircleMd />
         <Intro />
         <StrongPoints />
+        <Integration />
         <Services />
         <Methods />
         <Pricing />

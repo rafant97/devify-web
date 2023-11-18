@@ -16,32 +16,39 @@ const Service = ({ rutaImagen, title, description }) => {
     </div>
   );
 };
-Service.defaultProps = {
-  rutaImagen: "/speed.svg",
-  title: "High Performance",
-  description: "There are many variations variations.",
-};
 
 const StrongPoints = () => {
   return (
     <Section
       title="Don't miss any sales"
       subtitle="build on insurance"
-      description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, quo!"
+      description="Best solutions trigger best results."
       id="services"
     >
       <div className={styles.container}>
         <Fade cascade damping={0.05}>
-          <Service number={1} />
+          <Service 
+            number={1} 
+            description="Get the fastest website and optimize your sell ratio."
+            title="Fastest Performance"
+            rutaImagen={'/speed.svg'}
+          />
+            
           <Service
             rutaImagen={'/stairs.svg'}
-            title="Stack completly scalable"
-            description="Probando tete hasta la muerte bebe ajajajajaja jajajajaj jajajajaj"
+            title="Stack Completly Scalable"
+            description="Handle automatically massive amounts of traffic for your campaigns."
+          />
+
+          <Service
+            rutaImagen={'/ux.svg'}
+            title="UX/UI Fully Customizable"
+            description="Offer the best image of your bussiness and impact your customers."
           />
           <Service
             rutaImagen={'/target.svg'}
-            title="App Development"
-            description="Probando tete hasta la muerte bebe ajajajajaja jajajajaj jajajajaj"
+            title="SEO Friendly"
+            description="Display your product/service for those who are looking for it."
           />
         </Fade>
       </div>
