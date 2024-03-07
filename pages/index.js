@@ -8,15 +8,17 @@ import {
 import Intro from "../components/Intro";
 import Services from "../components/Services";
 import Methods from "../components/Methods";
-import Pricing from "../components/Pricing";
 import Clients from "../components/Clients";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
 import StrongPoints from "../components/StrongPoints";
-import Integration from "../components/Integration";
+import ShopifyPlusAgency from "../components/ShopifyPlusAgency";
+import Membresia from "../components/Membresia";
+
 
 export default function Home() {
+
   return (
     <div className={`page dark`}>
       <Head>
@@ -32,11 +34,11 @@ export default function Home() {
         <GradientCircleMd />
         <Intro />
         <StrongPoints />
-        <Integration />
-        <Services />
         <Methods />
-        <Pricing />
         <Clients />
+        {/* <Services /> */}
+        <ShopifyPlusAgency />
+        <Membresia />
         <Contact />
       </main>
       <Footer />

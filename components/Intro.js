@@ -4,36 +4,32 @@ import styles from "../styles/Intro.module.scss";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import ParticlesContainer from "./ParticlesContainer";
+import Image from "next/image";
 
 const Intro = () => {
   return (
     <Section className={styles.padding} id="">
       <div className={styles.container}>
         <div className={styles.info}>
-          <h1 className={styles.title}>
-            Shopify Headless Ecommerce Development
-
-          </h1>
-          <p>
-            Create solid selling systems to scalate your business.
+          <p className={styles.title}>
+            La solución que necesita tu Ecommerce
           </p>
+            <h1>Agencia Shopify</h1><span><h2>especializada en desarrollo</h2></span>
+            <div className={styles.div}>
+              <Image src="/shopifyexperts.png" className={styles.img} width={500} height={80} />
+            </div>
+            
           <div className={styles.actions}>
-            <Link href="#">
-              <a className={styles.customer}>
-                <span>New Customer</span>
+            <Link href="#contact" >
+              <a className={styles.customer} onClick={''}>
+                <span>Contacto</span>
                 <FaArrowRight />
               </a>
             </Link>
-            <Link href="">
-              <a className={styles.contact}>
-                <span>Contact Us</span>
-                <FaArrowRight />
-              </a>
-            </Link>
+            
           </div>
         </div>
       </div>
-
       <ParticlesContainer />
     </Section>
   );

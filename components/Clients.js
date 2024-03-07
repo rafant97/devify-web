@@ -53,16 +53,16 @@ Client.defaultProps = {
 const Clients = () => {
   return (
     <Section
-      subtitle="Our Clients"
-      title="Clients We've Worked With"
+      subtitle="Nuestros clientes"
+      title="Clientes con los que trabajamos"
       id="clients"
     >
       <Carousel emulateTouch showThumbs={false} showStatus={false}>
         <Client
           imgSource={"/person1.jpg"}
-          country={"Greece"}
-          profession={"App Developer"}
-          name={"Kosta papadopoulos"}
+          country={"Alemania"}
+          profession={"Obsequ - Store Manager"}
+          name={"Talha"}
         />
         <Client
           imgSource={"/person2.jpg"}

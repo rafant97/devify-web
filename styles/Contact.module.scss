@@ -97,3 +97,19 @@
         }
     }
 }
+
+.img{
+    filter: invert(100%);
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.text {
+    font-size: 25px;
+    color: white;
+}

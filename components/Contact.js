@@ -4,6 +4,7 @@ import { useState } from "react";
 import { z } from "zod";
 import { FaArrowRight } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
+import Image from "next/image";
 
 const InputContainer = ({ children, error, htmlFor, label }) => {
   return (
@@ -50,8 +51,8 @@ const Contact = () => {
 
   return (
     <Section
-      subtitle={"Contact Form"}
-      title="Contact With Us!"
+      subtitle={"Dinos qué necesitas"}
+      title="Contáctanos!"
       className={styles.container}
       border={false}
       id="contact"
@@ -63,7 +64,7 @@ const Contact = () => {
             <InputContainer
               className={styles.inputContainer}
               htmlFor={"name"}
-              label="YOUR NAME"
+              label="TU NOMBRE"
               error={errors?.name?._errors[0]}
             >
               <input
@@ -76,7 +77,7 @@ const Contact = () => {
             </InputContainer>
             <InputContainer
               htmlFor={"phone"}
-              label="PHONE"
+              label="TELEFONO"
               error={errors?.phone?._errors[0]}
             >
               <input
@@ -106,7 +107,7 @@ const Contact = () => {
           {/* SUBJECT */}
           <InputContainer
             htmlFor={"subject"}
-            label={"SUBJECT"}
+            label={"ASUNTO"}
             error={errors?.subject?._errors[0]}
           >
             <input
@@ -121,7 +122,7 @@ const Contact = () => {
           {/* YOUR MESSAGE */}
           <InputContainer
             htmlFor={"message"}
-            label="MESSAGE"
+            label="MENSAJE"
             error={errors?.message?._errors[0]}
           >
             <textarea
@@ -134,10 +135,15 @@ const Contact = () => {
           </InputContainer>
 
           <button onClick={() => validate()}>
-            <span>SEND MESSAGE</span>
+            <span>ENVIAR MENSAJE</span>
             <FaArrowRight />
           </button>
         </form>
+        <div className={styles.phone}>
+          <Image src="/phone.png" className={styles.img} width={75} height={75} />
+          <p className={styles.text}>+34 606 63 35 96</p>
+        </div>
+        
       </Fade>
     </Section>
   );

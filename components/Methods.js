@@ -13,9 +13,9 @@ const Methods = () => {
   const [parent] = useAutoAnimate();
   return (
     <Section
-      subtitle="You Can Acquire Everything."
-      title="Acquire new customers"
-      description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, quo."
+      subtitle="Cubrimos el ciclo completo"
+      title="¿Y después?"
+      description="Impulsa tu tienda con una estrategia que de resultados predecibles y sostenibles en el tiempo."
       id="methods"
     >
       <div className={styles.container}>
@@ -29,8 +29,8 @@ const Methods = () => {
                 setMethod3(false);
               }}
             >
-              <h3>Market Research</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h3>SEO para Shopify</h3>
+              <p>Sé el primero en aparecer cuando tu cliente te busque.</p>
             </button>
             <button
               className={method2 ? styles.active : ""}
@@ -40,8 +40,8 @@ const Methods = () => {
                 setMethod3(false);
               }}
             >
-              <h3>{`Reporting & Designing`}</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h3>SEM y Social Ads</h3>
+              <p>Lleva potenciales clientes a tu embudo de ventas.</p>
             </button>
             <button
               className={method3 ? styles.active : ""}
@@ -51,8 +51,8 @@ const Methods = () => {
                 setMethod3(true);
               }}
             >
-              <h3>Software Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+              <h3>Soporte y Mantenimiento</h3>
+              <p>Te acompañamos en todo el proceso.</p>
             </button>
           </JackInTheBox>
         </div>
@@ -63,7 +63,7 @@ const Methods = () => {
               height="100%"
               objectFit="cover"
               layout="fill"
-              src="/method1.jpg"
+              src="/seo.jpg"
             />
           )}
           {method2 && (
@@ -72,7 +72,7 @@ const Methods = () => {
               height="100%"
               objectFit="cover"
               layout="fill"
-              src="/method2.jpg"
+              src="/social-ads.jpg"
             />
           )}
           {method3 && (
@@ -81,7 +81,7 @@ const Methods = () => {
               height="100%"
               objectFit="cover"
               layout="fill"
-              src="/method3.jpg"
+              src="/support.jpg"
             />
           )}
         </div>
