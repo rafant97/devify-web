@@ -12,7 +12,8 @@
         width: 100%;
         p {
             font-size: 6vw;
-            margin-bottom: 1.6rem;
+            line-height: 1.2;
+            font-weight: 700;
             @media screen and (min-width: 1400px) {
                 font-size: 5rem;
             }
@@ -25,12 +26,8 @@
             @media screen and (max-width: 500px) {
                 font-size: 2.8rem;
             }
-            line-height: 1.2;
-            font-weight: 700;
-            background: var(--color-gradient-1);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+            
+           
         }
         h1 {
                 color: var(--color-gray-100);
@@ -155,12 +152,28 @@
                 }
             }
         }
+        
 
         .title {
             width: 100%;
             text-align: center;
         }
+        
     }
+}
+
+.nameRed {
+    color: rgb(0, 153, 255);
+    font-size: 5vw;
+            line-height: 1.2;
+            font-weight: 700;
+}
+
+.textGreen {
+    background: var(--color-gradient-1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 

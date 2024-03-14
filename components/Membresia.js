@@ -14,7 +14,7 @@ const Membresia = () => {
             a tu servicio para optimizar al máximo tus ratios de ventas y 
             el lifetime value de tu cliente.
           </p>
-          <a className={styles.link}>Pasa a shopify Plus con Devify</a>
+          {/* <a className={styles.link}>Quiero saber más</a> */}
         </div>
         
     </div>

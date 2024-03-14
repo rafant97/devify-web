@@ -41,10 +41,9 @@ const Navbar = () => {
                       width="100%"
                       height="100%"
                       objectFit="cover"
-                      src="/profile.jpg"
+                      src="/logo.png"
                     />
                   </div>
-                  <div className={styles.border}></div>
                 </div>
               </a>
             </Link>
@@ -58,27 +57,22 @@ const Navbar = () => {
             </li>
             <li>
               <Link href="#services">
-                <a>Services</a>
+                <a>Servicios</a>
               </Link>
             </li>
             <li>
               <Link href="#methods">
-                <a>Methods</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#pricing">
-                <a>Pricing</a>
+                <a>Métodos</a>
               </Link>
             </li>
             <li>
               <Link href="#clients">
-                <a>Clients</a>
+                <a>Clientes</a>
               </Link>
             </li>
             <li>
               <Link href="#contact">
-                <a>Contact</a>
+                <a>Contacto</a>
               </Link>
             </li>
             <div className={styles.mobile}>

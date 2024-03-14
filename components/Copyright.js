@@ -37,7 +37,7 @@ const Copyright = () => {
             transform: "translateY(12%)",
           }}
         >
-          @ WebDesignTuts 2022
+          @ Devify {new Date().getFullYear()}
         </span>
       </div>
     </div>

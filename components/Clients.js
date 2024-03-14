@@ -1,77 +1,75 @@
-import React from "react";
+import { useState } from "react";
 import Section from "./Section";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
 import styles from "../styles/Clients.module.scss";
 import Image from "next/image";
 import { RiDoubleQuotesL } from "react-icons/ri";
+import Link from "next/link";
 
-const Client = ({ imgSource, country, comment, name, profession }) => {
+const Cliente = ({ nombre, imagen }) => {
+  const [hovered, setHovered] = useState(false);
+
   return (
-    <div className={styles.client}>
-      <div className={styles.info}>
-        {/* Country */}
-        <div className={styles.country}>
-          <div className={styles.svg}>
-            <RiDoubleQuotesL />
-          </div>
-          <span>{country}</span>
-        </div>
-        {/* comment */}
-        <p className={styles.comment}>{comment}</p>
-        {/* name */}
-        <div className={styles.who}>
-          <span className={styles.name}>{name}</span>
-          <span className={styles.profession}>{profession}</span>
-        </div>
-      </div>
-      <div className={styles.imgContainer}>
-        <div className={styles.inner}>
-          <Image
-            width="100%"
-            height="100%"
-            objectFit="cover"
-            layout="responsive"
-            src={imgSource}
-          />
-          <div className={styles.border}></div>
-        </div>
+    <div
+      className={`${styles.client} ${hovered ? styles.hovered : ''}`}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <div className={styles.div}>
+        <Image src={imagen} alt={nombre} width={900} height={800} className={styles.img}/>
+        <div className={styles.nombre}>{nombre}</div>
       </div>
     </div>
   );
 };
 
-Client.defaultProps = {
-  imgSource: "/images/client.png",
-  country: "USA",
-  comment:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nisi voluptates ducimus voluptate, qui et itaque tempore iusto recusandae delectus.",
-  name: "John Doe",
-  profession: "Web Developer",
-};
 
 const Clients = () => {
+  const [hovered, setHovered] = useState(false);
+
   return (
     <Section
       subtitle="Nuestros clientes"
       title="Clientes con los que trabajamos"
       id="clients"
     >
-      <Carousel emulateTouch showThumbs={false} showStatus={false}>
-        <Client
-          imgSource={"/person1.jpg"}
-          country={"Alemania"}
-          profession={"Obsequ - Store Manager"}
-          name={"Talha"}
-        />
-        <Client
-          imgSource={"/person2.jpg"}
-          country={"Sweden"}
-          profession={"UX/UI Designer"}
-          name={"Moctezuma Killa"}
-        />
-        <Client imgSource={"/person3.jpg"} />
-      </Carousel>
+    <div 
+      className={styles.client}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+    >
+      <Link href={'https://obsequ.de/'}>
+        <div className={styles.div}>
+          <Image src={'/obsequ.png'} alt={'obsequ'} width={1300} height={800} className={styles.img}/>
+          <div className={styles.nombre}>Obsequ</div>
+        </div>
+      </Link>
+
+      <Link href={'https://4phones.eu/'}>
+        <div className={styles.div}>
+          <Image src={'/4phones.png'} alt={''} width={1300} height={800} className={styles.img}/>
+          <div className={styles.nombre}>4Phones</div>
+        </div>
+      </Link>
+
+      <Link href={'https://divisualproject.com/'}>
+        <div className={styles.div}>
+          <Image src={'/divisual-project.png'} alt={''} width={1300} height={800} className={styles.img}/>
+          <div className={styles.nombre}>Divisual Project</div>
+        </div>
+      </Link>
+
+      <Link href={'https://nextgmbh.com/'}>
+        <div className={styles.div}>
+          <Image src={'/nextgmbh.png'} alt={''} width={1300} height={800} className={styles.img}/>
+          <div className={styles.nombre}>Next Gmbh</div>
+        </div>
+      </Link>
+
+    </div>
+
+        
+        
     </Section>
   );
 };

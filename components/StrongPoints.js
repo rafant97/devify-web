@@ -7,7 +7,7 @@ import Link from "next/link";
 const Service = ({ rutaImagen, title, description, link }) => {
   return (
     <div className={styles.service}>
-      <Link href={link} >
+      {/* <Link href={link} > */}
         <div className={styles.link}>
           <div className={styles.div}>
             <Image src={rutaImagen} alt={`${title}` } width={100} height={100} className={styles.img}/>
@@ -17,7 +17,7 @@ const Service = ({ rutaImagen, title, description, link }) => {
             <p>{description}</p>
           </div>
         </div>
-      </Link>
+      {/* </Link> */}
     </div>
   );
 };
@@ -37,27 +37,27 @@ const StrongPoints = () => {
             description="El diseño que conecta con tus clientes."
             title="Desarrollo de temas"
             rutaImagen={'/ux.svg'}
-            link={'/temas'}
+            // link={'/#'}
           />
             
           <Service
             rutaImagen={'/stairs.svg'}
             title="Desarrollo de apps"
             description="No pongas límite a la escalabilidad de tu tienda."
-            link={'#'}
+            // link={'#'}
           />
 
           <Service
             rutaImagen={'/migration.svg'}
             title=" Migraciones"
             description="Cambia tu sistema actual a Shopify."
-            link={'#'}
+            // link={'#'}
           />
           <Service
             rutaImagen={'/develop.svg'}
             title="Headless"
             description="Una tienda desarrollada para ti con las ventajas de shopify"
-            link={'#'}
+            // link={'#'}
           />
         </Fade>
       </div>
