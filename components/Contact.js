@@ -140,8 +140,15 @@ const Contact = () => {
           </button>
         </form>
         <div className={styles.phone}>
-          <Image src="/phone.png" className={styles.img} width={75} height={75} />
-          <p className={styles.text}>+34 606 63 35 96</p>
+          <div className={styles.divPhone}>
+            <Image src="/phone.png" className={styles.img} width={75} height={75} />
+            <p className={styles.text}>+34 606 63 35 96</p>
+          </div>
+          <div className={styles.divPhone2}>
+            <Image src="/email.png" className={styles.img} width={75} height={75} />
+            <p className={styles.text}>contacto@devify.tech</p>
+          </div>
+          
         </div>
         
       </Fade>
