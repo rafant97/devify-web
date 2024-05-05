@@ -1,8 +1,14 @@
+.section {
+    gap: 5rem;
+}
+
 .service {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    cursor: pointer;
     .circle {
         position: relative;
         z-index: 1;
@@ -45,8 +51,8 @@
 
 .container {
     display: flex;
-    justify-content: space-between;
-    gap: 3rem;
+    justify-content: center;
+    gap: 10rem;
     @media screen and (max-width: 1200px) {
         display: grid;
         grid-template-columns: 1fr 1fr;

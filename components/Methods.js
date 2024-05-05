@@ -13,8 +13,8 @@ const Methods = () => {
   const [parent] = useAutoAnimate();
   return (
     <Section
-      subtitle="Cubrimos el ciclo completo"
-      title="¿Y después?"
+      subtitle="Marketing"
+      title="No pierdas ninguna venta"
       description="Impulsa tu tienda con una estrategia que de resultados predecibles y sostenibles en el tiempo."
       id="methods"
     >
@@ -43,17 +43,7 @@ const Methods = () => {
               <h3>SEM y Social Ads</h3>
               <p>Lleva potenciales clientes a tu embudo de ventas.</p>
             </button>
-            <button
-              className={method3 ? styles.active : ""}
-              onClick={() => {
-                setMethod1(false);
-                setMethod2(false);
-                setMethod3(true);
-              }}
-            >
-              <h3>Soporte y Mantenimiento</h3>
-              <p>Te acompañamos en todo el proceso.</p>
-            </button>
+            
           </JackInTheBox>
         </div>
         <div className={styles.images} ref={parent}>
@@ -73,15 +63,6 @@ const Methods = () => {
               objectFit="cover"
               layout="fill"
               src="/social-ads.jpg"
-            />
-          )}
-          {method3 && (
-            <Image
-              width="100%"
-              height="100%"
-              objectFit="cover"
-              layout="fill"
-              src="/support.jpg"
             />
           )}
         </div>

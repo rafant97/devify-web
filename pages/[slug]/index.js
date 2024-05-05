@@ -17,7 +17,6 @@ import Membresia from "../../components/Membresia";
 
 export default function Home() {
   
-
   return (
     <div className={`page dark`}>
       <Head>

@@ -25,19 +25,20 @@ const Service = ({ rutaImagen, title, description, link }) => {
 const StrongPoints = () => {
   return (
     <Section
-      title="No pierdas ninguna venta"
+      title="Optimiza todos los procesos"
       subtitle="Construye sobre seguro"
       description="Las mejores soluciones traen los mejores resultados."
       id="services"
+      className={styles.section}
     >
       <div className={styles.container}>
         <Fade cascade damping={0.05}>
           <Service 
             number={1} 
-            description="El diseño que conecta con tus clientes."
+            description="Enamora a tus clientes a primera vista"
             title="Desarrollo de temas"
             rutaImagen={'/ux.svg'}
-            // link={'/#'}
+            // link={'/themeDevelopment'}
           />
             
           <Service
@@ -53,10 +54,26 @@ const StrongPoints = () => {
             description="Cambia tu sistema actual a Shopify."
             // link={'#'}
           />
+        </Fade>
+      </div>
+      <div className={styles.container} style={{ marginTop: "3rem" }}>
+        <Fade cascade damping={0.05}>
           <Service
             rutaImagen={'/develop.svg'}
-            title="Headless"
-            description="Una tienda desarrollada para ti con las ventajas de shopify"
+            title="Integración de ERP"
+            description="Centraliza tu inventario, envíos, devoluciones..."
+            // link={'#'}
+          />
+          <Service
+            title="Scraping de competidores"
+            description="Conoce los precios de tu competencia en tiempo real."
+            rutaImagen={'/scraping.png'}
+            // link={'#'}
+          />
+          <Service
+            title="Atención al cliente con IA"
+            description="Optimiza los procesos con tus clientes"
+            rutaImagen={'/customer-service.png'}
             // link={'#'}
           />
         </Fade>

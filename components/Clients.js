@@ -30,7 +30,7 @@ const Clients = () => {
   return (
     <Section
       subtitle="Nuestros clientes"
-      title="Clientes con los que trabajamos"
+      title="Algunos de nuestros clientes"
       id="clients"
     >
     <div 
@@ -38,10 +38,10 @@ const Clients = () => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <Link href={'https://obsequ.de/'}>
+      <Link href={'https://www.chorlito.es/'}>
         <div className={styles.div}>
-          <Image src={'/obsequ.png'} alt={'obsequ'} width={1300} height={800} className={styles.img}/>
-          <div className={styles.nombre}>Obsequ</div>
+          <Image src={'/chorlito.png'} alt={'chorlito'} width={1300} height={800} className={styles.img}/>
+          <div className={styles.nombre}>Chorlito</div>
         </div>
       </Link>
 
@@ -56,13 +56,6 @@ const Clients = () => {
         <div className={styles.div}>
           <Image src={'/divisual-project.png'} alt={''} width={1300} height={800} className={styles.img}/>
           <div className={styles.nombre}>Divisual Project</div>
-        </div>
-      </Link>
-
-      <Link href={'https://nextgmbh.com/'}>
-        <div className={styles.div}>
-          <Image src={'/nextgmbh.png'} alt={''} width={1300} height={800} className={styles.img}/>
-          <div className={styles.nombre}>Next Gmbh</div>
         </div>
       </Link>
 
