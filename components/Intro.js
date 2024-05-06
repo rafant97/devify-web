@@ -56,7 +56,7 @@ useEffect(() => {
             </div>
             
           <div className={styles.actions}>
-            <Link href="#contact" >
+            <Link href="#contact" legacyBehavior>
               <a className={styles.customer} onClick={''}>
                 <span>Contacto</span>
                 <FaArrowRight />

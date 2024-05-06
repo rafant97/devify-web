@@ -25,14 +25,14 @@ const Footer = () => {
         {/* COL */}
         <div className={styles.col}>
           <div className={styles.me}>
-            <Link href={"/"}>
+            <Link href={"/"} legacyBehavior>
               <a>
                 <span>WebDesign</span>
                 <div className={styles.profile}>
                   <div className={styles.imgBorder}>
                     <Image
-                      width="100%"
-                      height="100%"
+                      width="100"
+                      height="100"
                       objectFit="cover"
                       src="/logo.png"
                     />
@@ -49,27 +49,27 @@ const Footer = () => {
           <ul>
             <li className={styles.title}>Services</li>
             <li>
-              <Link href="#">
+              <Link href="#" legacyBehavior>
                 <a>Home</a>
               </Link>
             </li>
             <li>
-              <Link href="#services">
+              <Link href="#services" legacyBehavior>
                 <a>Soluciones</a>
               </Link>
             </li>
             <li>
-              <Link href="#methods">
+              <Link href="#methods" legacyBehavior>
                 <a>Marketing</a>
               </Link>
             </li>
             <li>
-              <Link href="#clients">
+              <Link href="#clients" legacyBehavior>
                 <a>Clientes</a>
               </Link>
             </li>
             <li>
-              <Link href="#contact">
+              <Link href="#contact" legacyBehavior>
                 <a>Contacto</a>
               </Link>
             </li>

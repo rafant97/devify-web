@@ -40,6 +40,11 @@ const Contact = () => {
   //validate schema
   const sendEmail = (e) => {
     e.preventDefault();
+
+    if(!name || !phone || !email || !subject || !message){
+      setErrors(["Todos los campos son obligatorios"]);
+      return;
+    }
     console.log(name, phone, email, subject, message );
     console.log(form.current);
     emailjs
@@ -47,6 +52,7 @@ const Contact = () => {
     .then(
       () => {
         console.log('SUCCESS!');
+        setErrors(["¡Enviado!"]);
       },
       (error) => {
         console.log('FAILED...', error);
@@ -136,7 +142,7 @@ const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
             />
           </InputContainer>
-
+          {errors && <div className={styles.error}>{errors}</div>}
           <button type="submit">
             <span>ENVIAR MENSAJE</span>
             <FaArrowRight />

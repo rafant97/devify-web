@@ -49,8 +49,6 @@ const Methods = () => {
         <div className={styles.images} ref={parent}>
           {method1 && (
             <Image
-              width="100%"
-              height="100%"
               objectFit="cover"
               layout="fill"
               src="/seo.jpg"
@@ -58,8 +56,8 @@ const Methods = () => {
           )}
           {method2 && (
             <Image
-              width="100%"
-              height="100%"
+              width="100"
+              height="100"
               objectFit="cover"
               layout="fill"
               src="/social-ads.jpg"
