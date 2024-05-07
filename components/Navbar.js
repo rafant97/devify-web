@@ -38,8 +38,7 @@ const Navbar = () => {
                 <div className={styles.profile}>
                   <div className={styles.imgBorder}>
                     <Image
-                      width="100"
-                      height="100"
+                      layout="fill"
                       objectFit="cover"
                       src="/logo.png"
                     />
@@ -98,14 +97,13 @@ const Navbar = () => {
                 <div className={styles.me}>
                   <Link href={"/"} legacyBehavior>
                     <a>
-                      <span>WebDesign</span>
+                      <span>Devify</span>
                       <div className={styles.profile}>
                         <div className={styles.imgBorder}>
                           <Image
-                            width="100%"
-                            height="100%"
+                            layout="fill"
                             objectFit="cover"
-                            src="/profile-transparent.png"
+                            src="/logo.png"
                           />
                         </div>
                         <div className={styles.border}></div>
@@ -130,22 +128,22 @@ const Navbar = () => {
               </li>
               <li onClick={() => setIsActive(false)}>
                 <Link href="#services" legacyBehavior>
-                  <a>Services</a>
+                  <a>Soluciones</a>
                 </Link>
               </li>
               <li onClick={() => setIsActive(false)}>
                 <Link href="#methods" legacyBehavior>
-                  <a>Methods</a>
+                  <a>Marketing</a>
                 </Link>
               </li>
               <li onClick={() => setIsActive(false)}>
                 <Link href="#pricing" legacyBehavior>
-                  <a>Pricing</a>
+                  <a>Clientes</a>
                 </Link>
               </li>
               <li onClick={() => setIsActive(false)}>
                 <Link href="#pricing" legacyBehavior>
-                  <a>Pricing</a>
+                  <a>Contacto</a>
                 </Link>
               </li>
               <li onClick={() => setIsActive(false)}>

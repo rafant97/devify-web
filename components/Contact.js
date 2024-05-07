@@ -62,8 +62,8 @@ const Contact = () => {
 
   return (
     <Section
-      subtitle={"Dinos qué necesitas"}
-      title="Contáctanos!"
+      subtitle={"¿Qué necesitas?"}
+      title="¡Háblanos de ti!"
       className={styles.container}
       border={false}
       id="contact"

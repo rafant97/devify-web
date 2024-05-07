@@ -13,8 +13,6 @@ let companyName
 const Intro = () => {
   const router = useRouter();
   const name = router.query.slug;
-
-
 useEffect(() => {
   
 }, [])

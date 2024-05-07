@@ -29,8 +29,8 @@ const Clients = () => {
 
   return (
     <Section
-      subtitle="Nuestros clientes"
-      title="Algunos de nuestros clientes"
+      subtitle="Algunos de Nuestros clientes"
+      title="Casos de éxito"
       id="clients"
     >
     <div 

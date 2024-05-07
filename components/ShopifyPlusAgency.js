@@ -1,5 +1,6 @@
 import styles from "../styles/ShopifyPlusAgency.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const ShopifyPlusAgency = () => {
   return (
@@ -12,7 +13,9 @@ const ShopifyPlusAgency = () => {
             el proceso para que puedas aprovechar desde el primer momento los beneficios de 
             Shopify Plus.
         </p>
-        {/* <a className={styles.link}>Pasa a shopify Plus con Devify</a> */}
+        <Link href="#contact" legacyBehavior>
+          <a className={styles.link}>Pasa a shopify Plus con Devify</a>
+        </Link>
     </div>
   )
 }

@@ -28,9 +28,9 @@ export default function Home() {
       
       <div className={`page dark`}>
         <Head>
-          <title>Shopify Headless Agency</title>
+          <title>Agencia Shopify</title>
           <meta name="description" 
-          content="Need SHOPIFY HEADLESS for your bussiness? We offer you the best selling platform available in the market" 
+          content="Somos una agencia de shopify que te ayuda a crecer tu negocio con las mejores soluciones." 
           />
           <link rel="icon" href="/favicon.ico" />
         </Head>

@@ -4,7 +4,7 @@ import Section from "./Section";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 
-const Service = ({ rutaImagen, title, description, link }) => {
+const Service = ({ rutaImagen, title, description }) => {
   return (
     <div className={styles.service}>
       {/* <Link href={link} > */}
@@ -44,14 +44,21 @@ const StrongPoints = () => {
           <Service
             rutaImagen={'/stairs.svg'}
             title="Desarrollo de apps"
-            description="No pongas límite a la escalabilidad de tu tienda."
+            description="Elimina los límites de escalabilidad."
             // link={'#'}
           />
 
           <Service
             rutaImagen={'/migration.svg'}
-            title=" Migraciones"
-            description="Cambia tu sistema actual a Shopify."
+            title=" Migracion de plataformas"
+            description="Migra tu plataforma actual a Shopify."
+            // link={'#'}
+          />
+
+          <Service
+            rutaImagen={'/headless.png'}
+            title="Desarrollo Headless"
+            description="Diseños que traspasan las fronteras de Shopify"
             // link={'#'}
           />
         </Fade>

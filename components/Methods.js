@@ -56,8 +56,6 @@ const Methods = () => {
           )}
           {method2 && (
             <Image
-              width="100"
-              height="100"
               objectFit="cover"
               layout="fill"
               src="/social-ads.jpg"

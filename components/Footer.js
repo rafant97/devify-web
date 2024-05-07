@@ -31,8 +31,7 @@ const Footer = () => {
                 <div className={styles.profile}>
                   <div className={styles.imgBorder}>
                     <Image
-                      width="100"
-                      height="100"
+                      layout="fill"
                       objectFit="cover"
                       src="/logo.png"
                     />

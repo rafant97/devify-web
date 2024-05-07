@@ -1,5 +1,6 @@
 import styles from "../styles/Membresia.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const Membresia = () => {
   return (
@@ -14,7 +15,9 @@ const Membresia = () => {
             a tu servicio para optimizar al máximo tus ratios de ventas y 
             el lifetime value de tu cliente.
           </p>
-          {/* <a className={styles.link}>Quiero saber más</a> */}
+          <Link href="#contact" legacyBehavior>
+            <a className={styles.link}>Quiero saber más</a>
+          </Link>
         </div>
         
     </div>
