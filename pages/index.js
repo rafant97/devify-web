@@ -32,6 +32,7 @@ export default function Home() {
           <meta name="description" 
           content="Somos una agencia de shopify que te ayuda a crecer tu negocio con las mejores soluciones." 
           />
+          <meta name="facebook-domain-verification" content="je5030qj39nc42vtzrgazunmolw2i0" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <Navbar />
