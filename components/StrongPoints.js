@@ -4,10 +4,10 @@ import Section from "./Section";
 import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 
-const Service = ({ rutaImagen, title, description }) => {
+const Service = ({ rutaImagen, title, description, link }) => {
   return (
     <div className={styles.service}>
-      {/* <Link href={link} > */}
+      <Link href={link} >
         <div className={styles.link}>
           <div className={styles.div}>
             <Image src={rutaImagen} alt={`${title}` } width={100} height={100} className={styles.img}/>
@@ -17,7 +17,7 @@ const Service = ({ rutaImagen, title, description }) => {
             <p>{description}</p>
           </div>
         </div>
-      {/* </Link> */}
+      </Link>
     </div>
   );
 };
@@ -38,28 +38,28 @@ const StrongPoints = () => {
             description="Enamora a tus clientes a primera vista"
             title="Desarrollo de temas"
             rutaImagen={'/ux.svg'}
-            // link={'/themeDevelopment'}
+            link={'/themeDevelopment'}
           />
             
           <Service
             rutaImagen={'/stairs.svg'}
             title="Desarrollo de apps"
             description="Elimina los límites de escalabilidad."
-            // link={'#'}
+            link={'#'}
           />
 
           <Service
             rutaImagen={'/migration.svg'}
             title=" Migracion de plataformas"
             description="Migra tu plataforma actual a Shopify."
-            // link={'#'}
+            link={'#'}
           />
 
           <Service
             rutaImagen={'/headless.png'}
             title="Desarrollo Headless"
             description="Diseños que traspasan las fronteras de Shopify"
-            // link={'#'}
+            link={'#'}
           />
         </Fade>
       </div>
@@ -69,19 +69,19 @@ const StrongPoints = () => {
             rutaImagen={'/develop.svg'}
             title="Integración de ERP"
             description="Centraliza tu inventario, envíos, devoluciones..."
-            // link={'#'}
+            link={'#'}
           />
           <Service
             title="Scraping de competidores"
             description="Conoce los precios de tu competencia en tiempo real."
             rutaImagen={'/scraping.png'}
-            // link={'#'}
+            link={'#'}
           />
           <Service
             title="Atención al cliente con IA"
             description="Optimiza los procesos con tus clientes"
             rutaImagen={'/customer-service.png'}
-            // link={'#'}
+            link={'#'}
           />
         </Fade>
       </div>
