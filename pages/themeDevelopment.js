@@ -12,42 +12,40 @@ import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
 import Contact from "../components/Contact";
 import Section from "../components/Section";
+import Beneficios from "../components/Beneficios";
 
-const Beneficios = ({rutaImagen, title, description}) => {
-  return (
-    <div className={styles.beneficios}>
-      <Image src={rutaImagen} alt={`${title}` } width={80} height={80} className={styles.img}/>
-      <div className={styles.divBeneficios}>
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
-  )
-}
 
 const themeDevelopment = () => {
   return (
     <>
       <div className={`page dark`}>
+        //TODO: Crear componente de seo
       <Head>
         <title>Diseñamos, desarrollamos y lanzamos temas he</title>
       </Head>
       <Navbar />
-      <ImagenConTitle />
+      <ImagenConTitle 
+        srcScript={"https://unpkg.com/@splinetool/viewer@1.4.0/build/spline-viewer.js"}
+        splineViewer={"https://prod.spline.design/ucQBYkoyuae-RkVQ/scene.splinecode"}
+        title={'Diseños personalizados para Shopify'}
+        parrafo={'Enamora a tus clientes a primera vista'}
+      />
         <main className="main">
           <GradientCircleTop />
           <GradientCircleMd />
           <div className={styles.container}>
             <p className={styles.title1}>
-              Diseñamos, desarrollamos y lanzamos <span>temas hechos a 
-              medida para</span>   ayudar a que tus tiendas de Shopify o 
-              Shopify Plus entreguen <span>la mejor experiencia de usuario</span>.
+              Diseñamos, desarrollamos y lanzamos <span>
+              temas a medida de alta conversion para </span> 
+              que tus tiendas de Shopify o 
+              Shopify Plus entreguen <span>
+              la mejor experiencia de usuario</span>.
             </p>
 
               <Section 
                 subtitle={"Beneficios de un tema hecho a medida"}
                 title="Aumenta tus ventas"
-                description={"Diseñamos y desarrollamos temas hechos a medida para que tus tiendas de Shopify o Shopify Plus entreguen la mejor experiencia de usuario. "}
+                description={"Impacta en tus clientes y mejora tus resultados."}
               >
                 <div className={styles.grid}>
                   <Beneficios 

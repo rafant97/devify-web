@@ -26,9 +26,9 @@ Service.defaultProps = {
 const Services = () => {
   return (
     <Section
-      title="We make the whole migration for you"
-      subtitle="Think about starting over?."
-      description="Your store will be available while we are working on your next bussiness level"
+      title="El proceso se adapta a ti"
+      subtitle="Etapas del proceso"
+      description="Realizamos todo el proceso sin interferir en tu negocio y te acompañamos antes, durante y después."
       id="services"
     >
       <div className={styles.container}>
@@ -38,7 +38,7 @@ const Services = () => {
             background="var(--color-tertiary-dark)"
             color="var(--color-tertiary)"
             title="Análisis"
-            description="Comprobamos tus debilidades, fortalezas y oportunidades..."
+            description="Comprobamos lo que funciona y no de tu diseño actual."
           />
           <Service 
             background="var(--color-primary-dark)"
@@ -51,7 +51,7 @@ const Services = () => {
             background="var(--color-secondary-dark)"
             color="var(--color-secondary)"
             title="Desarrollo"
-            description="Materializamos el diseño para implementarlo en tu tienda."
+            description="Materializamos el diseño orientado a conseguir resultados."
           />
           <Service
             number={4}

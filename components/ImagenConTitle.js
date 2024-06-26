@@ -1,17 +1,27 @@
 import styles from '../styles/ImagenConTitle.module.scss'
 import Script from 'next/script'
+import Link from 'next/link'
+import { FaArrowRight } from "react-icons/fa";
 
-const ImagenConTitle = () => {
+const ImagenConTitle = ({srcScript, splineViewer, title, parrafo}) => {
   return (
     <>
       <div className={styles.container}>
         <div>
-          <Script type="module" src="https://unpkg.com/@splinetool/viewer@1.4.0/build/spline-viewer.js"></Script>
-          <spline-viewer url="https://prod.spline.design/ucQBYkoyuae-RkVQ/scene.splinecode"></spline-viewer>
+          <Script type="module" src={srcScript}></Script>
+          <spline-viewer url={splineViewer}></spline-viewer>
         </div>
         <div style={{ display: 'flex', gap: 20, flexDirection: 'column' }}>
-          <h1 className={styles.textGreen}> Diseños personalizados para Shopify</h1>
-          <p>Enamora a tus clientes a primera vista</p>
+          <h1 className={styles.textGreen}>{title}</h1>
+          <p>{parrafo}</p>
+          <div className={styles.actions}>
+            <Link href="#contact" legacyBehavior>
+              <a className={styles.customer} onClick={''}>
+                <span>Contacto</span>
+                <FaArrowRight />
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </>

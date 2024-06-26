@@ -7,15 +7,12 @@ import ParticlesContainer from "./ParticlesContainer";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import leads from "../data/leads";
-import { useEffect } from "react";
 let companyName
 
 const Intro = () => {
   const router = useRouter();
   const name = router.query.slug;
-useEffect(() => {
-  
-}, [])
+
   if (name) {
     // Función para encontrar el nombre de la compañía basado en el nombre del lead
     const findCompanyNameByFirstName = (firstName) => {
@@ -60,7 +57,6 @@ useEffect(() => {
                 <FaArrowRight />
               </a>
             </Link>
-            
           </div>
         </div>
       </div>

@@ -29,7 +29,6 @@
 
 .container {
     position: relative;
-    padding-bottom: 13rem;
     padding-top: 12rem;
     @media screen and (max-width: 1000px) {
         padding-top: 4rem;
@@ -128,6 +127,10 @@
 .beneficios {
     display: flex;
     gap: 1rem;
+    width: 500px;
+    @media screen and (max-width: 1000px) {
+        width: 100%;
+    }
 }
 
 .divBeneficios {

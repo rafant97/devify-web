@@ -45,30 +45,25 @@ const StrongPoints = () => {
             rutaImagen={'/stairs.svg'}
             title="Desarrollo de apps"
             description="Elimina los límites de escalabilidad."
-            link={'#'}
+            link={'/appDevelopment'}
           />
 
           <Service
             rutaImagen={'/migration.svg'}
-            title=" Migracion de plataformas"
+            title=" Migracion a Shopify"
             description="Migra tu plataforma actual a Shopify."
-            link={'#'}
+            link={'/migration-shopify'}
           />
 
-          <Service
-            rutaImagen={'/headless.png'}
-            title="Desarrollo Headless"
-            description="Diseños que traspasan las fronteras de Shopify"
-            link={'#'}
-          />
+          
         </Fade>
       </div>
       <div className={styles.container} style={{ marginTop: "3rem" }}>
         <Fade cascade damping={0.05}>
           <Service
-            rutaImagen={'/develop.svg'}
-            title="Integración de ERP"
-            description="Centraliza tu inventario, envíos, devoluciones..."
+            rutaImagen={'/headless.png'}
+            title="Desarrollo Headless"
+            description="Diseños que traspasan las fronteras de Shopify"
             link={'#'}
           />
           <Service

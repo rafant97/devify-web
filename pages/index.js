@@ -6,7 +6,6 @@ import {
   GradientCircleMd,
 } from "../components/GradientCircle";
 import Intro from "../components/Intro";
-import Services from "../components/Services";
 import Methods from "../components/Methods";
 import Clients from "../components/Clients";
 import Contact from "../components/Contact";
@@ -18,8 +17,6 @@ import Membresia from "../components/Membresia";
 
 // TODO: Move Google Analytics to layout
 import { GoogleAnalytics } from '@next/third-parties/google'
-
-
 
 export default function Home() {
 
