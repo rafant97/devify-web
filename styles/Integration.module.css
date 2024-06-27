@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.container .text {
+  width: 50%;
+  color: white;
+  margin: 50px;
+  padding: 20px;
+}
+.container .text p {
+  color: var(--color-gray-100);
+}
+.container .img {
+  width: 50%;
+}/*# sourceMappingURL=Integration.module.css.map */

@@ -1,0 +1,218 @@
+.outer {
+  position: relative;
+  z-index: 2;
+  padding: 4rem 0rem;
+  border-bottom: 1px solid var(--color-border-dark);
+  background: var(--color-darker);
+  background: var(--color-darker);
+}
+.outer::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--color-gray-200);
+}
+.outer .inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 100%;
+  padding: 0rem 4rem;
+}
+@media screen and (min-width: 1500px) {
+  .outer .inner {
+    margin: auto;
+    width: 1500px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .outer .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 850px) {
+  .outer .inner {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .outer .inner {
+    padding: 0rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 400px) {
+  .outer .inner {
+    padding: 0rem 0.4rem;
+    align-items: center;
+  }
+}
+
+.me a {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 0.4rem;
+}
+.me span {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  font-weight: 700;
+}
+.me .profile {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+.me .profile .imgBorder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.meDescription {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--color-gray-100);
+  max-width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .meDescription {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .col {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.col .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+.col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.col li a {
+  position: relative;
+  color: var(--color-gray-100);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.col li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2.5px;
+  left: 0;
+  width: 0%;
+  height: 1.5px;
+  background: var(--color-primary);
+  opacity: 0.5;
+  transition: all ease-in-out 250ms;
+}
+.col li a:hover {
+  color: var(--color-primary);
+}
+.col li a:hover::after {
+  width: 100%;
+}
+
+.newsletter p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--color-gray-100);
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+.input input {
+  width: 250px;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-gray-300);
+  border-radius: 6px;
+  height: 55px;
+  border: 2px solid #191b1e;
+  padding: 0 1rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 1px 4px 2px -3px rgb(159, 159, 159) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+  color: var(--color-gray-100);
+  outline: none;
+  transition: all ease 200ms;
+}
+.input input:focus {
+  border-color: var(--color-red-dark);
+}
+@media screen and (max-width: 600px) {
+  .input input {
+    height: 42px;
+    font-size: 0.9rem;
+  }
+}
+.input span {
+  display: flex;
+  color: rgb(184, 0, 0);
+}
+.input button {
+  margin-top: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 10px;
+  color: white;
+  padding: 1.1rem 1.8rem;
+  border: 2px solid transparent;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: all ease-in-out 250ms;
+  text-align: center;
+  background: var(--color-gradient-1);
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .input button {
+    padding: 0 1.8rem;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.input button:hover {
+  box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -webkit-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -moz-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+}/*# sourceMappingURL=Footer.module.css.map */

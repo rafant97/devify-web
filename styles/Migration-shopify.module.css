@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    margin-top: 17rem;
+  }
+}
+.container span {
+  color: var(--color-primary);
+}
+
+.title1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 75%;
+}
+@media screen and (max-width: 1000px) {
+  .title1 {
+    font-size: 2rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 640px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+.grid div {
+  display: flex;
+}
+.grid h3 {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+.grid p {
+  color: var(--color-gray-100);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+@media screen and (min-width: 1000px) {
+  .actions {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .actions {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 460px) {
+  .actions {
+    flex-direction: column;
+  }
+}
+.actions a {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  border-radius: 80px;
+  color: var(--color-white);
+  padding: 1.1rem 1.8rem;
+  border: 2px solid transparent;
+  font-size: 0.9rem;
+  text-shadow: var(--shadow-light);
+  letter-spacing: 0.5px;
+  transition: all ease-in-out 250ms;
+  text-align: center;
+  z-index: 2;
+}
+@media screen and (max-width: 1000px) {
+  .actions a {
+    padding: 0.85rem 1.3rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .actions a {
+    align-self: center;
+    padding: 1.1rem 1.8rem;
+  }
+}
+.actions a svg {
+  font-size: 0.8rem;
+}
+.actions .customer {
+  background: var(--color-gradient-1);
+  color: white;
+}
+.actions .customer:hover {
+  box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -webkit-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -moz-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+}
+.actions .contact {
+  color: var(--color-white);
+  border-color: var(--color-gray-200);
+}
+.actions .contact:hover {
+  border-color: transparent;
+  background: rgba(251, 83, 67, 0.7);
+  box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -webkit-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -moz-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  color: white;
+}/*# sourceMappingURL=Migration-shopify.module.css.map */

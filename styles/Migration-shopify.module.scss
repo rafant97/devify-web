@@ -73,6 +73,7 @@
     
     @media screen and (max-width: 1000px) {
         justify-content: center;
+        margin-top: 20px;
     }
     @media screen and (max-width: 460px) {
         flex-direction: column;
@@ -125,5 +126,12 @@
             -moz-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
             color: white;
         }
+    }
+}
+
+.cmsimg {
+    margin: 0 auto;
+    @media screen and (max-width: 700px) {
+       display: contents 
     }
 }

@@ -1,0 +1,103 @@
+@charset "UTF-8";
+.client {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  gap: 3rem;
+}
+@media screen and (max-width: 1200px) {
+  .client {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 640px) {
+  .client {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.client p {
+  color: white;
+  text-align: center;
+}
+
+.div:hover .nombre {
+  opacity: 1; /* Mostrar el nombre cuando el mouse está encima */
+}
+
+.div {
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media screen and (max-width: 1250px) {
+  .div {
+    width: auto;
+    height: 150px;
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+}
+
+.servicios {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Efecto de transición */
+  z-index: 80;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1250px) {
+  .servicios {
+    font-size: 1.5rem;
+  }
+}
+
+.nombre {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  text-align: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Efecto de transición */
+  z-index: 80;
+  cursor: pointer;
+  font-size: 2rem;
+}
+@media screen and (max-width: 1250px) {
+  .nombre {
+    font-size: 1.5rem;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  z-index: 1;
+  transition: all 0.5s ease;
+  text-align: center;
+}/*# sourceMappingURL=Clients.module.css.map */

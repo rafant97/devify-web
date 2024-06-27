@@ -64,7 +64,7 @@ const StrongPoints = () => {
             rutaImagen={'/headless.png'}
             title="Desarrollo Headless"
             description="Diseños que traspasan las fronteras de Shopify"
-            link={'#'}
+            link={'/headless-shopify'}
           />
           <Service
             title="Scraping de competidores"

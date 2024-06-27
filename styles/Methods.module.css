@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  gap: 3rem;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+.container .methods {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .container .methods {
+    width: 100%;
+    gap: 1rem;
+  }
+}
+.container .methods button {
+  padding: 3rem 2rem;
+  text-align: start;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  max-height: 250px;
+  width: 100%;
+  transition: all ease-in-out 200ms;
+}
+@media screen and (max-width: 1000px) {
+  .container .methods button {
+    padding: 2rem 1.5rem;
+  }
+}
+.container .methods button:hover {
+  background: var(--color-gray-300);
+}
+.container .methods button:hover h3 {
+  color: var(--color-white);
+}
+.container .methods button h3 {
+  margin-bottom: 1rem;
+  color: var(--color-gray-100);
+  font-size: 1.8rem;
+  transition: color ease-in-out 200ms;
+}
+@media screen and (max-width: 1024px) {
+  .container .methods button h3 {
+    text-align: center;
+  }
+}
+.container .methods button p {
+  font-size: 1rem;
+  color: var(--color-gray-100);
+  width: 80%;
+  line-height: 1.8;
+}
+@media screen and (max-width: 1250px) {
+  .container .methods button p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container .methods button p {
+    text-align: center;
+  }
+}
+.container .methods .active {
+  background: var(--color-gray-300);
+}
+.container .methods .active h3 {
+  color: var(--color-white);
+}
+.container .images {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .container .images {
+    width: auto;
+    height: 400px;
+  }
+}/*# sourceMappingURL=Methods.module.css.map */

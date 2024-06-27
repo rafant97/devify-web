@@ -1,0 +1,94 @@
+.outer {
+  position: relative;
+  z-index: 2;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid var(--color-border-dark);
+  background: var(--color-dark-light);
+}
+@media screen and (max-width: 550px) {
+  .outer {
+    padding: 1rem 0rem;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0rem 4rem;
+}
+@media screen and (min-width: 1500px) {
+  .container {
+    margin: auto;
+    width: 1500px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0rem 1.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 0rem 0.4rem;
+  }
+}
+.container a,
+.container svg {
+  color: var(--color-gray-100);
+}
+
+.contact {
+  display: flex;
+  gap: 0.5rem;
+}
+@media screen and (max-width: 640px) {
+  .contact {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+}
+.contact .location,
+.contact .phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  transition: color 200ms ease;
+  padding: 0 0.7rem;
+  border-right: 1.5px solid var(--color-border-dark);
+}
+.contact .location span,
+.contact .phone span {
+  transition: color 200ms ease-in-out;
+  color: var(--color-gray-100);
+}
+.contact .phone {
+  cursor: pointer;
+}
+.contact .phone:hover span {
+  color: var(--color-primary);
+}
+.contact .socials {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.contact .socials a {
+  display: flex;
+}
+.contact .socials a:hover svg {
+  color: var(--color-primary);
+}
+.contact .socials svg {
+  font-size: 1.2rem;
+  transition: color 200ms ease-in-out;
+}/*# sourceMappingURL=Banner.module.css.map */

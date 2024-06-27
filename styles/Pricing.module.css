@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .plan {
+  border-radius: 10px 0 0 10px;
+  padding: 4rem 2.5rem;
+  background: var(--color-gray-200);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .container .plan {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .container .plan p {
+    width: 100%;
+    align-self: center;
+    text-align: center;
+  }
+}
+.container .plan h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+.container .plan p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-gray-100);
+  max-width: 300px;
+  line-height: 1.7;
+}
+.container .plan .price {
+  margin: 1.8rem 0;
+  display: flex;
+  justify-content: center;
+}
+.container .plan .price .num {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+.container .plan .price .unit {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+.container .plan .purchase,
+.container .plan .upgrade {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  padding: 1.1rem 1.8rem;
+  border: 2px solid transparent;
+  font-size: 0.9rem;
+  text-shadow: var(--shadow-light);
+  letter-spacing: 0.5px;
+  transition: all ease-in-out 250ms;
+  text-align: center;
+  background: var(--color-gradient-1);
+  margin-bottom: 1rem;
+}
+.container .plan .purchase:hover,
+.container .plan .upgrade:hover {
+  box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -webkit-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -moz-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+}
+.container .plan .upgrade {
+  border-color: var(--color-gray-100);
+  background: transparent;
+  color: var(--color-gray-100);
+}
+.container .plan .upgrade:hover {
+  border-color: transparent;
+  background: rgba(251, 83, 67, 0.7);
+  box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -webkit-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  -moz-box-shadow: 0px 0px 10px 6px rgba(251, 83, 67, 0.7);
+  color: white;
+}
+.container .plan .reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 0.4rem;
+}
+.container .plan .reviews .review {
+  color: var(--color-gray-100);
+  font-size: 0.9rem;
+}
+.container .details {
+  width: 400px;
+  background: var(--color-selected);
+  border-radius: 0 10px 10px 0;
+  padding: 4rem 2.5rem;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+.container .details .detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .container .details {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+}
+.container .details h3 {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-bottom: 0.7rem;
+}
+.feature span {
+  color: var(--color-gray-100);
+  font-size: 1rem;
+}/*# sourceMappingURL=Pricing.module.css.map */

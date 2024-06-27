@@ -43,7 +43,7 @@ const appDevelopment = () => {
                   subtitle={"Beneficios de un tema hecho a medida"}
                   title="Aumenta tus ventas"
                   description={"Impacta en tus clientes y mejora tus resultados."}
-                >
+              >
                   <div className={styles.grid}>
                     <Beneficios 
                       rutaImagen={'/conversion-rate.png'}
