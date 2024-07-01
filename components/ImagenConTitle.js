@@ -7,7 +7,7 @@ const ImagenConTitle = ({srcScript, splineViewer, title, parrafo}) => {
   return (
     <>
       <div className={styles.container}>
-        <div>
+        <div className={styles.spline}>
           <Script type="module" src={srcScript}></Script>
           <spline-viewer url={splineViewer}></spline-viewer>
         </div>

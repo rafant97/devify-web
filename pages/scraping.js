@@ -24,7 +24,7 @@ const scraping = () => {
             <Navbar />
             <ImagenConTitle
                 srcScript={"https://unpkg.com/@splinetool/viewer@1.8.0/build/spline-viewer.js"}
-                splineViewer={"https://prod.spline.design/e8exdqwJIVLCHAXR/scene.splinecode"}
+                splineViewer={"https://prod.spline.design/xVu9CYvopUbXDu1I/scene.splinecode"}
                 title={'Scraping ecommerce'}
                 parrafo={'Consigue los precios de tu competencia en tiempo real'}
             />
@@ -47,22 +47,22 @@ const scraping = () => {
                         <Beneficios 
                           title="Precios dinámicos super precisos"
                           description="Analiza los precios de la competencia en tiempo real y ajusta los tuyos."
-                          rutaImagen={'/optimization.svg'}
+                          rutaImagen={'/conversion-rate.png'}
                         />
                         <Beneficios 
-                          title="Conocede la oferta de mercado"
+                          title="Conocede la oferta de mercado en todo momento"
                           description="Sé más competitivo conociendo toda la oferta disponible en internet."
-                          rutaImagen={'/optimization.svg'}
+                          rutaImagen={'/data.png'}
                         />
                         <Beneficios 
                           title="Seguimiento de inventarios"
                           description="Conoce el stock de la competencia y anticipa tendencias de demanda."
-                          rutaImagen={'/optimization.svg'}
+                          rutaImagen={'money.svg'}
                         />
                         <Beneficios 
                           title="Análisis de Opiniones y Reseñas"
                           description="Extrae reseñas para entender las preocupaciones de los clientes."
-                          rutaImagen={'/optimization.svg'}
+                          rutaImagen={'/scraping.png'}
                         />
                       </div>
                     </Section>

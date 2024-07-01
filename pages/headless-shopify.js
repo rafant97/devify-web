@@ -26,7 +26,7 @@ const headlessShopify = () => {
         <Navbar />
         <ImagenConTitle
             srcScript={"https://unpkg.com/@splinetool/viewer@1.8.0/build/spline-viewer.js"}
-            splineViewer={"https://prod.spline.design/e8exdqwJIVLCHAXR/scene.splinecode"}
+            splineViewer={"https://prod.spline.design/g9KYRFbeVXaqNH-M/scene.splinecode"}
             title={'Agencia Shopify Headless'}
             parrafo={'Desarrollado exclusivamente para tí'}
         />

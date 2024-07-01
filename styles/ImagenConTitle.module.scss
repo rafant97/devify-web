@@ -129,3 +129,9 @@
         }
     }
 }
+
+.spline {
+    @media screen and (max-width: 500px) {
+        height: 600px;
+    }
+}
