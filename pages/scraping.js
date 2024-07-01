@@ -6,6 +6,12 @@ import {
     GradientCircleMd,
   } from "../components/GradientCircle";
 import styles from "../styles/Scraping.module.scss"
+import Section from "../components/Section";
+import Beneficios from "../components/Beneficios";
+import Footer from "../components/Footer";
+import Copyright from "../components/Copyright";
+import Contact from "../components/Contact";
+import Membresia from "../components/Membresia";
 
 const scraping = () => {
   return (
@@ -19,19 +25,56 @@ const scraping = () => {
             <ImagenConTitle
                 srcScript={"https://unpkg.com/@splinetool/viewer@1.8.0/build/spline-viewer.js"}
                 splineViewer={"https://prod.spline.design/e8exdqwJIVLCHAXR/scene.splinecode"}
-                title={'Agencia Shopify Headless'}
-                parrafo={'Desarrollado exclusivamente para tí'}
+                title={'Scraping ecommerce'}
+                parrafo={'Consigue los precios de tu competencia en tiempo real'}
             />
             <main className="main">
                 <GradientCircleTop />
                 <GradientCircleMd />
                 <div className={styles.container}>
                     <p className={styles.title1}>
-                        Desarrollamos <span>tiendas headless rápidas, que conectan y enfocadas 
-                        en convertir </span>con Shopify Plus
+                        Anlizamos tu competencia <span>en tiempo real</span> para que tomes las
+                        mejores decisiones.
+                    </p>
+                    <Section
+                        title="Consigue la información necesaria para dominar el mercado"
+                        subtitle="Beneficios del scraping"
+                        description="Consigue los mejores resultados de tu competencia en tiempo real"
+                        id="services"
+                        className={styles.section}
+                    >
+                      <div className={styles.grid}>
+                        <Beneficios 
+                          title="Precios dinámicos super precisos"
+                          description="Analiza los precios de la competencia en tiempo real y ajusta los tuyos."
+                          rutaImagen={'/optimization.svg'}
+                        />
+                        <Beneficios 
+                          title="Conocede la oferta de mercado"
+                          description="Sé más competitivo conociendo toda la oferta disponible en internet."
+                          rutaImagen={'/optimization.svg'}
+                        />
+                        <Beneficios 
+                          title="Seguimiento de inventarios"
+                          description="Conoce el stock de la competencia y anticipa tendencias de demanda."
+                          rutaImagen={'/optimization.svg'}
+                        />
+                        <Beneficios 
+                          title="Análisis de Opiniones y Reseñas"
+                          description="Extrae reseñas para entender las preocupaciones de los clientes."
+                          rutaImagen={'/optimization.svg'}
+                        />
+                      </div>
+                    </Section>
+                    <p className={styles.title1} style={{ margin: "6rem 0" }}>
+                        Desarrollamos el software de scraping <span>hecho a medida según tus necesidades</span>
                     </p>
                 </div>
+                <Membresia />
+                <Contact />
             </main>
+            <Footer />
+            <Copyright />
       </div>
     
     </>

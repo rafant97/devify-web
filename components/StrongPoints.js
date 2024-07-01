@@ -70,7 +70,7 @@ const StrongPoints = () => {
             title="Scraping de competidores"
             description="Conoce los precios de tu competencia en tiempo real."
             rutaImagen={'/scraping.png'}
-            link={'#'}
+            link={'/scraping'}
           />
           <Service
             title="Atención al cliente con IA"
