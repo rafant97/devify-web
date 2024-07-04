@@ -14,12 +14,13 @@ import Contact from "../components/Contact";
 import Section from "../components/Section";
 import Beneficios from "../components/Beneficios";
 
+//TODO: Crear componente de seo para el Head
 
 const themeDevelopment = () => {
   return (
     <>
       <div className={`page dark`}>
-        //TODO: Crear componente de seo
+        
       <Head>
         <title>Diseñamos, desarrollamos y lanzamos temas he</title>
       </Head>

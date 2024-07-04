@@ -15,10 +15,13 @@ import Footer from '../components/Footer';
 import Copyright from '../components/Copyright';
 import Contact from '../components/Contact';
 import Membresia from '../components/Membresia';
+
+//TODO: Crear componente de seo para el Head
+
 const migrationShopify = () => {
   return (
     <div className={`page dark`}>
-        //TODO: Crear componente de seo
+        
         <Head>
             <title>Migration Shopify</title>
         </Head>

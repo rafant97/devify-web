@@ -151,11 +151,11 @@ const Contact = () => {
         
         <div className={styles.phone}>
           <div className={styles.divPhone}>
-            <Image src="/phone.png" className={styles.img} width={75} height={75} />
+            <Image src="/phone.png" className={styles.img} width={75} height={75} alt={phone}/>
             <p className={styles.text}>+34 606 63 35 96</p>
           </div>
           <div className={styles.divPhone2}>
-            <Image src="/email.png" className={styles.img} width={75} height={75} />
+            <Image src="/email.png" className={styles.img} width={75} height={75} alt={email}/>
             <p className={styles.text}>contacto@devify.tech</p>
           </div>
           

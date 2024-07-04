@@ -13,11 +13,13 @@ import Copyright from "../components/Copyright";
 import Contact from "../components/Contact";
 import Membresia from "../components/Membresia";
 
+//TODO: Crear componente de seo para el Head
+
 const scraping = () => {
   return (
     <>
       <div className={`page dark`}>
-            //TODO: Crear componente de seo
+            
             <Head>
                 <title>Diseñamos, desarrollamos y lanzamos temas he</title>
             </Head>

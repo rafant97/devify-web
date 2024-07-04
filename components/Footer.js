@@ -34,6 +34,7 @@ const Footer = () => {
                       layout="fill"
                       objectFit="cover"
                       src="/logo.png"
+                      alt="logo"
                     />
                   </div>
                 </div>

@@ -59,6 +59,7 @@ const Navbar = () => {
                       layout="fill"
                       objectFit="cover"
                       src="/logo.png"
+                      alt="logo"
                     />
                   </div>
                 </div>
@@ -184,6 +185,7 @@ const Navbar = () => {
                             layout="fill"
                             objectFit="cover"
                             src="/logo.png"
+                            alt="logo"
                           />
                         </div>
                         <div className={styles.border}></div>

@@ -15,11 +15,13 @@ import Copyright from "../components/Copyright";
 import Contact from "../components/Contact";
 import { FaArrowRight } from "react-icons/fa";
 
+//TODO: Crear componente de seo para el Head
+
 const appDevelopment = () => {
   return (
     <>
       <div className={`page dark`}>
-        //TODO: Crear componente de seo
+        
         <Head>
             <title>Diseñamos, desarrollamos y lanzamos temas he</title>
         </Head>

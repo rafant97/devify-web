@@ -14,11 +14,13 @@ import Copyright from "../components/Copyright";
 import Contact from "../components/Contact";
 import Membresia from "../components/Membresia";
 
+//TODO: Crear componente de seo para el Head
+
 const atClienteIa = () => {
   return (
     <>
       <div className={`page dark`}>
-        //TODO: Crear componente de seo
+
             <Head>
                 <title>Diseñamos, desarrollamos y lanzamos temas he</title>
             </Head>
@@ -87,7 +89,7 @@ const atClienteIa = () => {
                             accede a la sección de soporte. Aquí se activa un chatbot de inteligencia artificial 
                             que le solicita detallar el problema.</p>
                             <br></br>
-                          <p>El sistema de inteligencia artificial reconoce las palabras clave: "no funciona". 
+                          <p>El sistema de inteligencia artificial reconoce las palabras clave: &quot;no funciona&quot;. 
                             Basándose en estas palabras, redirige al cliente a un artículo donde se indica que debe 
                             retirar la pestaña de plástico de la ranura de la batería. El cliente se da cuenta de que 
                             no lo ha hecho, la retira y el dispositivo opera correctamente.</p>

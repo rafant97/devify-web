@@ -47,7 +47,7 @@ const Intro = () => {
           
             <h1>Agencia Shopify</h1><span><h2>especializada en desarrollo</h2></span>
             <div className={styles.div}>
-              <Image src="/shopifyexperts.png" className={styles.img} width={500} height={80} />
+              <Image src="/shopifyexperts.png" className={styles.img} width={500} height={80} alt="shopify-experts"/>
             </div>
             
           <div className={styles.actions}>

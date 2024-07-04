@@ -15,11 +15,13 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Copyright from "../components/Copyright"
 
+//TODO: Crear componente de seo para el Head
+
 const headlessShopify = () => {
   return (
     <>
       <div className={`page dark`}>
-        //TODO: Crear componente de seo
+        
         <Head>
             <title>Diseñamos, desarrollamos y lanzamos temas he</title>
         </Head>
