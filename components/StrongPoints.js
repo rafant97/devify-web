@@ -76,7 +76,7 @@ const StrongPoints = () => {
             title="Atención al cliente con IA"
             description="Optimiza los procesos con tus clientes"
             rutaImagen={'/customer-service.png'}
-            link={'#'}
+            link={'/atencionclienteia'}
           />
         </Fade>
       </div>

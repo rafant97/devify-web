@@ -4,11 +4,29 @@ import useOnClickOutside from "../hooks/ClickOutside";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import {useRouter} from 'next/router'
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const mobileNav = useRef();
+  const router = useRouter();
+  const isHomePage = router.pathname === '/';
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsDropdownOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsDropdownOpen(false);
+  };
+
+  //Este es para el navbar del mobile
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   useOnClickOutside(mobileNav, () => setIsActive(false));
   const handleScroll = () => {
     if (window.scrollY > 100) {
@@ -47,40 +65,102 @@ const Navbar = () => {
               </a>
             </Link>
           </div>
-          {/* RIGHTSIDE */}
-          <ul className={styles.nav_list}>
-            <li>
-              <Link href="#" legacyBehavior>
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#services" legacyBehavior>
-                <a>Soluciones</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#methods" legacyBehavior>
-                <a>Marketing</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#clients" legacyBehavior>
-                <a>Clientes</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#contact" legacyBehavior>
-                <a>Contacto</a>
-              </Link>
-            </li>
-            <div className={styles.mobile}>
-              <button onClick={() => setIsActive(true)}>
-                <FaBars />
-              </button>
-            </div>
-            
-          </ul>
+          {/*Navbar para la homepage */}
+          {isHomePage ? (
+            <>
+              {/* RIGHTSIDE */}
+              <ul className={styles.nav_list}>
+                <li>
+                  <Link href="#" legacyBehavior>
+                    <a>Inicio</a>
+                  </Link>
+                </li>
+                <li
+                  className={styles.dropdown}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  
+                    <a className={styles.dropbtn}>Soluciones</a>
+                    {isDropdownOpen && (
+                      <div className={styles.dropdownContent}>
+                        <>
+                          <Link href="/themeDevelopment" legacyBehavior><a>Desarrollo de Temas</a></Link>
+                          <Link href="/appDevelopment" legacyBehavior><a>Desarrollo de Apps</a></Link>
+                          <Link href="/migration-shopify" legacyBehavior><a>Migraciones</a></Link>
+                          <Link href="/headless-shopify" legacyBehavior><a>Desarrollo Headless</a></Link>
+                          <Link href="/scraping" legacyBehavior><a>Scraping de Competidores</a></Link>
+                          <Link href="/atencionclienteia" legacyBehavior><a>Atención al Cliente con IA</a></Link>
+                        </>
+                      </div>
+                    )}
+                  
+                </li>
+                <li>
+                  <Link href="#methods" legacyBehavior>
+                    <a>Marketing</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#clients" legacyBehavior>
+                    <a>Clientes</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#contact" legacyBehavior>
+                    <a>Contacto</a>
+                  </Link>
+                </li>
+                <div className={styles.mobile}>
+                  <button onClick={() => setIsActive(true)}>
+                    <FaBars />
+                  </button>
+                </div>
+              </ul>
+            </>
+          ) : (
+            <>
+              {/* RIGHTSIDE */}
+              <ul className={styles.nav_list}>
+              <li>
+                <Link href="/" legacyBehavior>
+                  <a>Inicio</a>
+                </Link>
+              </li>
+              <li
+                  className={styles.dropdown}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  
+                    <a className={styles.dropbtn}>Soluciones</a>
+                    {isDropdownOpen && (
+                      <div className={styles.dropdownContent}>
+                        <>
+                          <Link href="/themeDevelopment" legacyBehavior><a>Desarrollo de Temas</a></Link>
+                          <Link href="/appDevelopment" legacyBehavior><a>Desarrollo de Apps</a></Link>
+                          <Link href="/migration-shopify" legacyBehavior><a>Migraciones</a></Link>
+                          <Link href="/headless-shopify" legacyBehavior><a>Desarrollo Headless</a></Link>
+                          <Link href="/scraping" legacyBehavior><a>Scraping de Competidores</a></Link>
+                          <Link href="/atencionclienteia" legacyBehavior><a>Atención al Cliente con IA</a></Link>
+                        </>
+                      </div>
+                    )}
+                  
+                </li>
+              <li>
+                <Link href="#contact" legacyBehavior>
+                  <a>Contacto</a>
+                </Link>
+              </li>
+              <div className={styles.mobile}>
+                <button onClick={() => setIsActive(true)}>
+                  <FaBars />
+                </button>
+              </div>
+              </ul>
+            </>
+          )}
         </nav>
       </div>
       {/* MOBILE NAVIGATION */}
@@ -123,33 +203,24 @@ const Navbar = () => {
 
               <li onClick={() => setIsActive(false)}>
                 <Link href="#" legacyBehavior>
-                  <a>Home</a>
+                  <a>Inicio</a>
                 </Link>
               </li>
-              <li onClick={() => setIsActive(false)}>
-                <Link href="#services" legacyBehavior>
-                  <a>Soluciones</a>
-                </Link>
-              </li>
-              <li onClick={() => setIsActive(false)}>
-                <Link href="#methods" legacyBehavior>
-                  <a>Marketing</a>
-                </Link>
-              </li>
-              <li onClick={() => setIsActive(false)}>
-                <Link href="#pricing" legacyBehavior>
-                  <a>Clientes</a>
-                </Link>
-              </li>
-              <li onClick={() => setIsActive(false)}>
-                <Link href="#pricing" legacyBehavior>
-                  <a>Contacto</a>
-                </Link>
-              </li>
-              <li onClick={() => setIsActive(false)}>
-                <Link href="#clients" legacyBehavior>
-                  <a>Clients</a>
-                </Link>
+              <li className={styles.dropdown}>
+                
+                <a onClick={toggleDropdown} className={styles.dropbtn}>Soluciones</a>
+                {isDropdownOpen && (
+                  <div className={styles.dropdownContent}>
+                    <>
+                      <Link href="/themeDevelopment" legacyBehavior><a>Desarrollo de Temas</a></Link>
+                      <Link href="/appDevelopment" legacyBehavior><a>Desarrollo de Apps</a></Link>
+                      <Link href="/migration-shopify" legacyBehavior><a>Migraciones</a></Link>
+                      <Link href="/headless-shopify" legacyBehavior><a>Desarrollo Headless</a></Link>
+                      <Link href="/scraping" legacyBehavior><a>Scraping de Competidores</a></Link>
+                      <Link href="/atencionclienteia" legacyBehavior><a>Atención al Cliente con IA</a></Link>
+                    </>
+                  </div>
+                )}
               </li>
               <li onClick={() => setIsActive(false)}>
                 <Link href="#contact" legacyBehavior>

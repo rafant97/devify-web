@@ -27,7 +27,7 @@ const Footer = () => {
           <div className={styles.me}>
             <Link href={"/"} legacyBehavior>
               <a>
-                <span>WebDesign</span>
+                <span>Devify</span>
                 <div className={styles.profile}>
                   <div className={styles.imgBorder}>
                     <Image
@@ -50,21 +50,6 @@ const Footer = () => {
             <li>
               <Link href="#" legacyBehavior>
                 <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#services" legacyBehavior>
-                <a>Soluciones</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#methods" legacyBehavior>
-                <a>Marketing</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="#clients" legacyBehavior>
-                <a>Clientes</a>
               </Link>
             </li>
             <li>

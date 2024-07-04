@@ -60,7 +60,7 @@ const migrationShopify = () => {
                       </div>
                   </div>
                   <div className={styles.cmsimg}>
-                    <Image src="/cms.png" alt="tech" width={400} height={400} />
+                    <Image src="/cms.png" alt="tech" width={400} height={400} style={{width: '100%'}}/>
                   </div>    
                 </div>
                 <Section
