@@ -143,7 +143,7 @@ const Navbar = () => {
                           <Link href="/migration-shopify" legacyBehavior><a>Migraciones</a></Link>
                           <Link href="/headless-shopify" legacyBehavior><a>Desarrollo Headless</a></Link>
                           <Link href="/scraping" legacyBehavior><a>Scraping de Competidores</a></Link>
-                          <Link href="/atencionclienteia" legacyBehavior><a>Atención al Cliente con IA</a></Link>
+                          <Link href="/atencion-cliente-ia" legacyBehavior><a>Atención al Cliente con IA</a></Link>
                         </>
                       </div>
                     )}
