@@ -1,0 +1,40 @@
+<!-- public/sitemap.xml -->
+   <xml version="1.0" encoding="UTF-8">
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     <url>
+       <loc>https://devify.tech/</loc>
+       <changefreq>weekly</changefreq>º
+       <priority>1.00</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/desarrollo-apps</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/migration-shopify</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/headless-shopify</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/scraping</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/desarrollo-temas-shopify</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/atencion-cliente-ia</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+   </urlset>
+   </xml>

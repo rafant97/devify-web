@@ -38,14 +38,14 @@ const StrongPoints = () => {
             description="Enamora a tus clientes a primera vista"
             title="Desarrollo de temas"
             rutaImagen={'/ux.svg'}
-            link={'/themeDevelopment'}
+            link={'/desarrollo-temas-shopify'}
           />
             
           <Service
             rutaImagen={'/stairs.svg'}
             title="Desarrollo de apps"
             description="Elimina los límites de escalabilidad."
-            link={'/appDevelopment'}
+            link={'/desarrollo-apps'}
           />
 
           <Service
@@ -76,7 +76,7 @@ const StrongPoints = () => {
             title="Atención al cliente con IA"
             description="Optimiza los procesos con tus clientes"
             rutaImagen={'/customer-service.png'}
-            link={'/atencionclienteia'}
+            link={'/atencion-cliente-ia'}
           />
         </Fade>
       </div>
