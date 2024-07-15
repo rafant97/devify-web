@@ -138,7 +138,7 @@ const Navbar = () => {
                     {isDropdownOpen && (
                       <div className={styles.dropdownContent}>
                         <>
-                          <Link href="/themeDevelopment" legacyBehavior><a>Desarrollo de Temas</a></Link>
+                          <Link href="/desarrollo-temas-shopify" legacyBehavior><a>Desarrollo de Temas</a></Link>
                           <Link href="/desarrollo-apps" legacyBehavior><a>Desarrollo de Apps</a></Link>
                           <Link href="/migration-shopify" legacyBehavior><a>Migraciones</a></Link>
                           <Link href="/headless-shopify" legacyBehavior><a>Desarrollo Headless</a></Link>

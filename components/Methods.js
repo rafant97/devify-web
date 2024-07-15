@@ -14,7 +14,7 @@ const Methods = () => {
   return (
     <Section
       subtitle="Marketing"
-      title="No pierdas ninguna venta"
+      title="No pierdes ninguna venta con expertos en Shopify"
       description="Impulsa tu tienda con una estrategia que de resultados predecibles y sostenibles en el tiempo."
       id="methods"
     >

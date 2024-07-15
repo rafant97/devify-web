@@ -1,4 +1,3 @@
-import Head from "next/head"
 import Image from "next/image"
 import Navbar from "../components/Navbar"
 import ImagenConTitle from "../components/ImagenConTitle"
@@ -13,17 +12,18 @@ import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
 import Contact from "../components/Contact";
 import Membresia from "../components/Membresia";
-
-//TODO: Crear componente de seo para el Head
+import HeadSEO from "../components/HeadSEO";
 
 const atClienteIa = () => {
   return (
     <>
       <div className={`page dark`}>
 
-            <Head>
-                <title>Diseñamos, desarrollamos y lanzamos temas he</title>
-            </Head>
+            <HeadSEO
+              title="Atención al cliente con IA"
+              description="Utiliza la atención al cliente IA en tu tienda para mejorar la experiencia de tus clientes"
+              url="atencion-cliente-ia"
+            />
             <Navbar />
             <ImagenConTitle
                 srcScript={"https://unpkg.com/@splinetool/viewer@1.8.0/build/spline-viewer.js"}
@@ -79,7 +79,7 @@ const atClienteIa = () => {
                     </Section>
                     <Section
                         subtitle="Ejemplo de atención al cliente con IA"
-                        title="¿Cómo funciona el servicio de atención al cliente automatizado?"
+                        title="¿Cómo funciona el servicio de atención al cliente automatizado para Ecommerces?"
                         className={styles.section2}
                     >
                       <div className={styles.grid} style={{margin: '80px 0 0 0'}}>

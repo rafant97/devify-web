@@ -1,4 +1,3 @@
-import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import {
@@ -13,18 +12,20 @@ import Beneficios from "../components/Beneficios";
 import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
 import Contact from "../components/Contact";
+import HeadSeo from "../components/HeadSEO";
 import { FaArrowRight } from "react-icons/fa";
 
-//TODO: Crear componente de seo para el Head
 
 const appDevelopment = () => {
   return (
     <>
       <div className={`page dark`}>
         
-        <Head>
-            <title>Diseñamos, desarrollamos y lanzamos temas he</title>
-        </Head>
+        <HeadSeo
+          title="Apps de Shopify a medida"
+          description="Utiliza la atención al cliente IA en tu tienda para mejorar la experiencia de tus clientes"
+          url="atencion-cliente-ia"
+        />
         <Navbar />
         <ImagenConTitle
             srcScript={"https://unpkg.com/@splinetool/viewer@1.4.0/build/spline-viewer.js"}
@@ -42,8 +43,8 @@ const appDevelopment = () => {
             </p>
             
               <Section 
-                  subtitle={"Beneficios de un tema hecho a medida"}
-                  title="Aumenta tus ventas"
+                  subtitle={"Beneficios de una aplicación hecha a medida"}
+                  title="Desarrolla una app de Shopify y aumenta tus ventas"
                   description={"Impacta en tus clientes y mejora tus resultados."}
               >
                   <div className={styles.grid}>
@@ -73,8 +74,8 @@ const appDevelopment = () => {
           </div>
           <div>
             <Section
-              subtitle="¿Con cual trabajas tu?"
-              title="Algunas tecnologías con las que trabajamos"
+              subtitle="¿Con cual trabajas en tu Shopify?"
+              title="Algunas tecnologías con las que trabajamos e integramos en nuestras Apps de Shopify a medida"
               description={"Optimiza todos los procesos de tu tienda."}
             >
               <div className={styles.grid}>

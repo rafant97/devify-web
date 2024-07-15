@@ -13,22 +13,24 @@ import Copyright from "../components/Copyright";
 import Contact from "../components/Contact";
 import Section from "../components/Section";
 import Beneficios from "../components/Beneficios";
+import HeadSEO from "../components/HeadSEO";
 
-//TODO: Crear componente de seo para el Head
 
 const themeDevelopment = () => {
   return (
     <>
       <div className={`page dark`}>
         
-      <Head>
-        <title>Diseñamos, desarrollamos y lanzamos temas he</title>
-      </Head>
+      <HeadSEO 
+        title="Desarrollo de temas personalizados para Shopify"
+        description="Desarrolla temas a medida para mejorar la experiencia de tus clientes"
+        url="desarrollo-temas-shopify"
+      />
       <Navbar />
       <ImagenConTitle 
         srcScript={"https://unpkg.com/@splinetool/viewer@1.4.0/build/spline-viewer.js"}
         splineViewer={"https://prod.spline.design/ucQBYkoyuae-RkVQ/scene.splinecode"}
-        title={'Diseños personalizados para Shopify'}
+        title={'Desarrollo de temas personalizados para Shopify'}
         parrafo={'Enamora a tus clientes a primera vista'}
       />
         <main className="main">
@@ -44,8 +46,8 @@ const themeDevelopment = () => {
             </p>
 
               <Section 
-                subtitle={"Beneficios de un tema hecho a medida"}
-                title="Aumenta tus ventas"
+                subtitle={"Beneficios de un tema personalizado para Shopify"}
+                title="Rediseña tu tienda y aumenta tus tiendas"
                 description={"Impacta en tus clientes y mejora tus resultados."}
               >
                 <div className={styles.grid}>

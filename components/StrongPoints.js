@@ -25,8 +25,8 @@ const Service = ({ rutaImagen, title, description, link }) => {
 const StrongPoints = () => {
   return (
     <Section
-      title="Optimiza todos los procesos"
-      subtitle="Construye sobre seguro"
+      title="Optimiza todos los procesos con desarrolladores de Shopify"
+      subtitle="Construye sobre seguro con una agencia Shopify"
       description="Las mejores soluciones traen los mejores resultados."
       id="services"
       className={styles.section}

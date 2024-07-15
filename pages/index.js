@@ -15,8 +15,10 @@ import StrongPoints from "../components/StrongPoints";
 import ShopifyPlusAgency from "../components/ShopifyPlusAgency";
 import Membresia from "../components/Membresia";
 
+
 // TODO: Move Google Analytics to layout
 import { GoogleAnalytics } from '@next/third-parties/google'
+import HeadSEO from "../components/HeadSEO";
 
 export default function Home() {
 
@@ -24,14 +26,11 @@ export default function Home() {
     <>
       
       <div className={`page dark`}>
-        <Head>
-          <title>Agencia Shopify</title>
-          <meta name="description" 
-          content="Somos una agencia de shopify que te ayuda a crecer tu negocio con las mejores soluciones." 
-          />
-          <meta name="facebook-domain-verification" content="je5030qj39nc42vtzrgazunmolw2i0" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+        <HeadSEO
+          title="Agencia Shopify"
+          description="Somos una agencia Shopify especializada en desarrollo de Apps, temas, "
+          url=""
+        />
         <Navbar />
         <main className="main">
           <GradientCircleTop />
@@ -48,7 +47,7 @@ export default function Home() {
         <Footer />
         <Copyright />
       </div>
-      <GoogleAnalytics gaId="G-D94E9CQX8T" />
+      
     </>
   );
 }

@@ -1,4 +1,4 @@
-import Head from 'next/head'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from "react-icons/fa";
@@ -15,16 +15,18 @@ import Footer from '../components/Footer';
 import Copyright from '../components/Copyright';
 import Contact from '../components/Contact';
 import Membresia from '../components/Membresia';
+import HeadSEO from '../components/HeadSEO';
 
-//TODO: Crear componente de seo para el Head
 
 const migrationShopify = () => {
   return (
     <div className={`page dark`}>
         
-        <Head>
-            <title>Migration Shopify</title>
-        </Head>
+        <HeadSEO
+          title="Migración Shopify"
+          description="Migramos tu tienda y todos los datos a Shopify o Shopify Plus sin complicaciones"
+          url=""
+        />
         <Navbar />
         <ImagenConTitle
             srcScript={"https://unpkg.com/@splinetool/viewer@1.4.3/build/spline-viewer.js"}

@@ -1,4 +1,3 @@
-import Head from "next/head"
 import Navbar from "../components/Navbar"
 import ImagenConTitle from "../components/ImagenConTitle"
 import {
@@ -12,22 +11,23 @@ import Footer from "../components/Footer";
 import Copyright from "../components/Copyright";
 import Contact from "../components/Contact";
 import Membresia from "../components/Membresia";
-
-//TODO: Crear componente de seo para el Head
+import HeadSEO from "../components/HeadSEO";
 
 const scraping = () => {
   return (
     <>
       <div className={`page dark`}>
             
-            <Head>
-                <title>Diseñamos, desarrollamos y lanzamos temas he</title>
-            </Head>
+            <HeadSEO
+              title="Ecommerce Scraper"
+              description="Espía a tu competencia y actúa al momento para ganar más ventas a través del Scraping"
+              url="scraping"
+            />
             <Navbar />
             <ImagenConTitle
                 srcScript={"https://unpkg.com/@splinetool/viewer@1.8.0/build/spline-viewer.js"}
                 splineViewer={"https://prod.spline.design/xVu9CYvopUbXDu1I/scene.splinecode"}
-                title={'Scraping ecommerce'}
+                title={'Ecommerce Scraper'}
                 parrafo={'Consigue los precios de tu competencia en tiempo real'}
             />
             <main className="main">
@@ -39,9 +39,9 @@ const scraping = () => {
                         mejores decisiones.
                     </p>
                     <Section
-                        title="Consigue la información necesaria para dominar el mercado"
+                        title="Consigue la información necesaria para dominar el mercado a través del Ecommerce Scraping"
                         subtitle="Beneficios del scraping"
-                        description="Consigue los mejores resultados de tu competencia en tiempo real"
+                        description="La información crucial de tu competencia en tiempo real"
                         id="services"
                         className={styles.section}
                     >

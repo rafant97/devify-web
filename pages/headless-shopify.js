@@ -1,4 +1,3 @@
-import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
 import styles from "../styles/Headless.module.scss"
@@ -14,17 +13,20 @@ import Membresia from "../components/Membresia"
 import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Copyright from "../components/Copyright"
+import HeadSEO from "../components/HeadSEO"
+import Head from "next/head"
 
-//TODO: Crear componente de seo para el Head
 
 const headlessShopify = () => {
   return (
     <>
       <div className={`page dark`}>
         
-        <Head>
-            <title>Diseñamos, desarrollamos y lanzamos temas he</title>
-        </Head>
+        <HeadSEO
+          title="Agencia Shopify Headless"
+          description="Desarrollamos tiendas headless que conectan y enfocadas en convertir con Shopify Plus"
+          url="headless-shopify"
+        />
         <Navbar />
         <ImagenConTitle
             srcScript={"https://unpkg.com/@splinetool/viewer@1.8.0/build/spline-viewer.js"}
