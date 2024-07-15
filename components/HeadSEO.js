@@ -4,8 +4,8 @@ export default function HeadSEO({ title, description, url }) {
   return (
     <Head>
       <title>{title}</title>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta hhttpEquiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
       <meta name="description" property="description" content={description}/>
       <meta property="og:title" content={title} />
       <meta property="og:type" content="website" />
