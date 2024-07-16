@@ -22,7 +22,7 @@ const Service = ({ rutaImagen, title, description, link }) => {
   );
 };
 
-const StrongPoints = () => {
+const StrongPoints = ({lugar}) => {
   return (
     <Section
       title="Optimiza todos los procesos con desarrolladores de Shopify"
@@ -30,6 +30,7 @@ const StrongPoints = () => {
       description="Las mejores soluciones traen los mejores resultados."
       id="services"
       className={styles.section}
+      lugar={lugar}
     >
       <div className={styles.container}>
         <Fade cascade damping={0.05}>

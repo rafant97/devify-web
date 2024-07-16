@@ -7,6 +7,7 @@ const Section = ({
   subtitle,
   description,
   border,
+  lugar
 }) => {
   return (
     <section
@@ -18,9 +19,9 @@ const Section = ({
       {title && (
         <div className={styles.title}>
           <h3>
-            <span>{subtitle}</span>
+            <span>{subtitle}{' '}{lugar}</span>
           </h3>
-          <h2>{title}</h2>
+          <h2>{title}{' '}{lugar}</h2>
           {description && <p>{description}</p>}
         </div>
       )}

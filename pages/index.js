@@ -1,5 +1,4 @@
-import { useState } from "react";
-import Head from "next/head";
+
 import Navbar from "../components/Navbar";
 import {
   GradientCircleTop,
@@ -15,9 +14,6 @@ import StrongPoints from "../components/StrongPoints";
 import ShopifyPlusAgency from "../components/ShopifyPlusAgency";
 import Membresia from "../components/Membresia";
 
-
-// TODO: Move Google Analytics to layout
-import { GoogleAnalytics } from '@next/third-parties/google'
 import HeadSEO from "../components/HeadSEO";
 
 export default function Home() {

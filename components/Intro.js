@@ -9,7 +9,7 @@ import { useRouter } from "next/router";
 import leads from "../data/leads";
 let companyName
 
-const Intro = () => {
+const Intro = ({lugar}) => {
   const router = useRouter();
   const name = router.query.slug;
 
@@ -45,7 +45,7 @@ const Intro = () => {
               : <div className={styles.title}><p className={styles.textGreen}>La solución que necesita tu Ecommerce</p></div>
             }
           
-            <h1>Agencia Shopify</h1><span><h2>especializada en desarrollo</h2></span>
+            <h1>Agencia Shopify {lugar}</h1>{lugar ? '' : <span><h2>especializada en desarrollo</h2></span>}
             <div className={styles.div}>
               <Image src="/shopifyexperts.png" className={styles.img} width={500} height={80} alt="shopify-experts"/>
             </div>

@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import { Fade, JackInTheBox } from "react-awesome-reveal";
 
-const Methods = () => {
+const Methods = ({lugar}) => {
   const [method1, setMethod1] = useState(true);
   const [method2, setMethod2] = useState(false);
   const [method3, setMethod3] = useState(false);
@@ -17,6 +17,7 @@ const Methods = () => {
       title="No pierdes ninguna venta con expertos en Shopify"
       description="Impulsa tu tienda con una estrategia que de resultados predecibles y sostenibles en el tiempo."
       id="methods"
+      lugar={lugar}
     >
       <div className={styles.container}>
         <div className={styles.methods}>
