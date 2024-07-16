@@ -24,7 +24,7 @@ export default function madrid() {
         <HeadSEO
           title="Agencia Shopify Madrid"
           description="Somos una agencia Shopify de Madrid especializada en desarrollo de Apps, temas, "
-          url=""
+          url="agencia-shopify/madrid"
         />
         <Navbar />
         <main className="main">

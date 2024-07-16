@@ -23,8 +23,8 @@ export default function barcelona() {
       <div className={`page dark`}>
         <HeadSEO
           title="Agencia Shopify Barcelona"
-          description="Somos una agencia Shopify especializada en desarrollo de Apps, temas, "
-          url=""
+          description="Somos una agencia Shopify en Barcelona especializada en desarrollo de Apps, temas, "
+          url="agencia-shopify/barcelona"
         />
         <Navbar />
         <main className="main">

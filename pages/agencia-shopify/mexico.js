@@ -15,7 +15,7 @@ import Membresia from "../../components/Membresia";
 
 import HeadSEO from "../../components/HeadSEO";
 
-export default function madrid() {
+export default function Mexico() {
 
   return (
     <>
@@ -23,8 +23,8 @@ export default function madrid() {
       <div className={`page dark`}>
         <HeadSEO
           title="Agencia Shopify Mexico"
-          description="Somos una agencia Shopify de Madrid especializada en desarrollo de Apps, temas, "
-          url=""
+          description="Somos una agencia Shopify de Mexico especializada en desarrollo de Apps, temas, "
+          url="agencia-shopify/mexico"
         />
         <Navbar />
         <main className="main">

@@ -23,8 +23,8 @@ export default function valencia() {
       <div className={`page dark`}>
         <HeadSEO
           title="Agencia Shopify Valencia"
-          description="Somos una agencia Shopify especializada en desarrollo de Apps, temas, "
-          url=""
+          description="Somos una agencia Shopify en Valencia especializada en desarrollo de Apps, temas, Headless, Migraciones, Scraping..."
+          url="agencia-shopify/valencia"
         />
         <Navbar />
         <main className="main">
