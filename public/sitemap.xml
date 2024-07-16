@@ -36,5 +36,30 @@
         <changefreq>weekly</changefreq>
         <priority>0.85</priority>
      </url>
+     <url>
+        <loc>https://devify.tech/atencion-cliente-ia</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/agencia-shopify/valencia</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/agencia-shopify/barcelona</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/agencia-shopify/mexico</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
+     <url>
+        <loc>https://devify.tech/agencia-shopify/madrid</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+     </url>
    </urlset>
    </xml>
