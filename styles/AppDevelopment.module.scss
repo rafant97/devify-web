@@ -76,6 +76,7 @@
     }
     @media screen and (max-width: 460px) {
         flex-direction: column;
+        margin-top: 20px;
     }
     a {
         display: flex;
@@ -126,4 +127,13 @@
             color: white;
         }
     }
+}
+
+.divImg {
+    margin: 10px auto;
+
+}
+
+.img {
+    width: 100%;
 }

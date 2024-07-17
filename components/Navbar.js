@@ -214,12 +214,12 @@ const Navbar = () => {
                 {isDropdownOpen && (
                   <div className={styles.dropdownContent}>
                     <>
-                      <Link href="/themeDevelopment" legacyBehavior><a>Desarrollo de Temas</a></Link>
+                      <Link href="/desarrollo-temas-shopify" legacyBehavior><a>Desarrollo de Temas</a></Link>
                       <Link href="/desarrollo-apps" legacyBehavior><a>Desarrollo de Apps</a></Link>
                       <Link href="/migration-shopify" legacyBehavior><a>Migraciones</a></Link>
                       <Link href="/headless-shopify" legacyBehavior><a>Desarrollo Headless</a></Link>
                       <Link href="/scraping" legacyBehavior><a>Scraping de Competidores</a></Link>
-                      <Link href="/atencionclienteia" legacyBehavior><a>Atención al Cliente con IA</a></Link>
+                      <Link href="/atencion-cliente-ia" legacyBehavior><a>Atención al Cliente con IA</a></Link>
                     </>
                   </div>
                 )}

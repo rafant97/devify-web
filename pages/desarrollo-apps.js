@@ -98,8 +98,8 @@ const appDevelopment = () => {
                       </Link>
                     </div>
                 </div>
-                <div style={{margin: '0 auto'}}>
-                  <Image src="/headlesspartners.png" alt="tech" width={400} height={400} />
+                <div className={styles.divImg}>
+                  <Image src="/headlesspartners.png" className={styles.img} alt="tech" width={400} height={400} />
                 </div>
                 
                 
