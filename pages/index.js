@@ -23,8 +23,8 @@ export default function Home() {
       
       <div className={`page dark`}>
         <HeadSEO
-          title="Agencia Shopify"
-          description="Somos una agencia Shopify especializada en desarrollo de Apps, temas, Headless, Migraciones, Scraping... "
+          title="Agencia Shopify especializada en desarrollo web"
+          description="Somos una agencia y consultoría Shopify/Shopify Plus especializada en desarrollo de Apps, temas, Headless, Migraciones, Scraping... ¡Si buscas ayuda con tu tienda HAZ CLICK!"
           url=""
         />
         <Navbar />

@@ -13,7 +13,7 @@ const Service = ({ rutaImagen, title, description, link }) => {
             <Image src={rutaImagen} alt={`${title}` } width={100} height={100} className={styles.img}/>
           </div>
           <div className={styles.title}>
-            <h2>{title}</h2>
+            <h3>{title}</h3>
             <p>{description}</p>
           </div>
         </div>
@@ -25,7 +25,7 @@ const Service = ({ rutaImagen, title, description, link }) => {
 const StrongPoints = ({lugar}) => {
   return (
     <Section
-      title="Optimiza todos los procesos con desarrolladores de Shopify"
+      title="Optimiza todos los procesos con desarrolladores Shopify/Shopify Plus"
       subtitle="Construye sobre seguro con una agencia Shopify"
       description="Las mejores soluciones traen los mejores resultados."
       id="services"

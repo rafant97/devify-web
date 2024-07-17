@@ -45,7 +45,7 @@ const Intro = ({lugar}) => {
               : <div className={styles.title}><p className={styles.textGreen}>La solución que necesita tu Ecommerce</p></div>
             }
           
-            <h1>Agencia Shopify {lugar}</h1>{lugar ? '' : <span><h2>especializada en desarrollo</h2></span>}
+            <h1>Agencia Shopify {lugar}</h1>{lugar ? '' : <span><p className={styles.text}>especializada en desarrollo</p></span>}
             <div className={styles.div}>
               <Image src="/shopifyexperts.png" className={styles.img} width={500} height={80} alt="shopify-experts"/>
             </div>

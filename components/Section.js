@@ -18,11 +18,11 @@ const Section = ({
     >
       {title && (
         <div className={styles.title}>
-          <h3>
+          <p className={styles.subtitle}>
             <span>{subtitle}{' '}{lugar}</span>
-          </h3>
+          </p>
           <h2>{title}{' '}{lugar}</h2>
-          {description && <p>{description}</p>}
+          {description && <p className={styles.description}>{description}</p>}
         </div>
       )}
       {title ? <div className={styles.children}>{children}</div> : children}
