@@ -38,24 +38,24 @@ const Clients = () => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <Link href={'https://www.chorlito.es/'}>
+      <Link href={'https://obsequ.de/'} target="_blank">
         <div className={styles.div}>
-          <Image src={'/chorlito.png'} alt={'chorlito'} width={1300} height={800} className={styles.img}/>
-          <div className={styles.nombre}>Chorlito</div>
+          <Image src={'/obsequ.png'} alt={'obsequ'} width={1300} height={800} className={styles.img}/>
+          <div className={styles.nombre}>Obsequ</div>
         </div>
       </Link>
 
-      <Link href={'https://4phones.eu/'}>
+      <Link href={'https://tetsuo.com/'} target="_blank">
         <div className={styles.div}>
-          <Image src={'/4phones.png'} alt={''} width={1300} height={800} className={styles.img}/>
-          <div className={styles.nombre}>4Phones</div>
+          <Image src={'/tetsuo.png'} alt={'tetsuo'} width={1300} height={800} className={styles.img}/>
+          <div className={styles.nombre}>Tetsuo</div>
         </div>
       </Link>
 
-      <Link href={'https://divisualproject.com/'}>
+      <Link href={'https://www.comprarhieloseco.es/'} target="_blank">
         <div className={styles.div}>
-          <Image src={'/divisual-project.png'} alt={''} width={1300} height={800} className={styles.img}/>
-          <div className={styles.nombre}>Divisual Project</div>
+          <Image src={'/muyfrio.png'} alt={'muyfrio'} width={1300} height={800} className={styles.img}/>
+          <div className={styles.nombre}>Muyfrio</div>
         </div>
       </Link>
 
