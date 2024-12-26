@@ -14,7 +14,6 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Copyright from "../components/Copyright"
 import HeadSEO from "../components/HeadSEO"
-import Head from "next/head"
 
 
 const headlessShopify = () => {

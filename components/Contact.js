@@ -1,4 +1,3 @@
-
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from "../styles/Contact.module.scss";
@@ -69,9 +68,39 @@ const Contact = () => {
       id="contact"
     >
       <Fade>
+        <div style={{
+          width: '100%',
+          maxWidth: '800px',
+          margin: '0 auto'
+        }}>
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/form/MxC94ig8WdXNPLPT32cR"
+            style={{
+              width: '100%',
+              height: '700px',
+              border: 'none',
+              borderRadius: '8px',
+            }}
+            id="inline-MxC94ig8WdXNPLPT32cR" 
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Form 0"
+            data-height="856"
+            data-layout-iframe-id="inline-MxC94ig8WdXNPLPT32cR"
+            data-form-id="MxC94ig8WdXNPLPT32cR"
+            title="Form 0"
+          >
+          </iframe>
+        </div>
+        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
         
-      <form onSubmit={sendEmail} className={styles.form} ref={form}>
-          {/* NAME */}
+        {/* Formulario comentado
+        <form onSubmit={sendEmail} className={styles.form} ref={form}>
           <div className={styles.name}>
             <InputContainer
               className={styles.inputContainer}
@@ -99,7 +128,6 @@ const Contact = () => {
               />
             </InputContainer>
           </div>
-          {/* EMAIL */}
           <InputContainer
             htmlFor={"email"}
             label={"EMAIL"}
@@ -112,8 +140,6 @@ const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </InputContainer>
-
-          {/* SUBJECT */}
           <InputContainer
             htmlFor={"subject"}
             label={"ASUNTO"}
@@ -127,8 +153,6 @@ const Contact = () => {
               onChange={(e) => setSubject(e.target.value)}
             />
           </InputContainer>
-
-          {/* YOUR MESSAGE */}
           <InputContainer
             htmlFor={"message"}
             label="MENSAJE"
@@ -148,6 +172,7 @@ const Contact = () => {
             <FaArrowRight />
           </button>
         </form>
+        */}
         
         <div className={styles.phone}>
           <div className={styles.divPhone}>
@@ -158,9 +183,7 @@ const Contact = () => {
             <Image src="/email.png" className={styles.img} width={75} height={75} alt={email}/>
             <p className={styles.text}>contacto@devify.tech</p>
           </div>
-          
         </div>
-        
       </Fade>
     </Section>
   );
