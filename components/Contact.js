@@ -7,6 +7,7 @@ import { z } from "zod";
 import { FaArrowRight } from "react-icons/fa";
 import { Fade } from "react-awesome-reveal";
 import Image from "next/image";
+import Script from 'next/script';
 
 const InputContainer = ({ children, error, htmlFor, label }) => {
   
@@ -97,7 +98,10 @@ const Contact = () => {
           >
           </iframe>
         </div>
-        <script src="https://link.msgsndr.com/js/form_embed.js"></script>
+        <Script 
+          src="https://link.msgsndr.com/js/form_embed.js"
+          strategy="lazyOnload"
+        />
         
         {/* Formulario comentado
         <form onSubmit={sendEmail} className={styles.form} ref={form}>
@@ -128,6 +132,7 @@ const Contact = () => {
               />
             </InputContainer>
           </div>
+          {/* EMAIL 
           <InputContainer
             htmlFor={"email"}
             label={"EMAIL"}
@@ -140,6 +145,8 @@ const Contact = () => {
               onChange={(e) => setEmail(e.target.value)}
             />
           </InputContainer>
+
+          {/* SUBJECT 
           <InputContainer
             htmlFor={"subject"}
             label={"ASUNTO"}
@@ -153,6 +160,8 @@ const Contact = () => {
               onChange={(e) => setSubject(e.target.value)}
             />
           </InputContainer>
+
+          {/* YOUR MESSAGE 
           <InputContainer
             htmlFor={"message"}
             label="MENSAJE"
@@ -184,6 +193,7 @@ const Contact = () => {
             <p className={styles.text}>contacto@devify.tech</p>
           </div>
         </div>
+        
       </Fade>
     </Section>
   );
